@@ -11,7 +11,7 @@
 
 .main{
   display: grid;
-  grid-template-areas: "ej1" "ej2" "ej3" "ej5" "ej6" "ej7";
+  grid-template-areas: "ej1" "ej2" "ej3" "ej4" "ej5" "ej6" "ej7";
 
   .ej1{
     grid-area: ej1;
@@ -27,6 +27,12 @@
   }
   .ej3{
     grid-area: ej3;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+  .ej4{
+    grid-area: ej4;
     margin: 5%;
     padding: 5% 0;
     background-color: $main-color;
