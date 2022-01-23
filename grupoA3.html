@@ -17,7 +17,7 @@
      
     <!--Estilo común hay que crearlo en css aparte y hacer SASS-->
     <!-- <link rel="stylesheet" type="text/css" href="./CSS/estilos.css" /> -->
-    <link rel="stylesheet" type="text/css" href="./CSS/estilosFinal.css"/>
+    <link rel="stylesheet" type="text/css" href="./CSS/estilosFinalGrupos.css"/>
 
     <!-- Favicon  -->
     <link rel="icon" href="images/icons8-oreja.svg" type="faviconimage/x-icon">
@@ -93,9 +93,11 @@
           <img src="./images/portada_animada.gif" width="700" height="700" class="img-fluid"
           alt="portada responsive" />
         </div>
+
         <div class="contenido">
-            <!-- carousel -->
-        <div class="ej1">
+
+          <!-- carousel -->
+          <div class="ej1 ej">
           <section id="ej1">
             <h2>CAROUSEL</h2><br><br>
             
@@ -156,13 +158,13 @@
               </div>
             </div>
           </section>
-  </div>
+          </div>
 
-  <!-- modal -->
-  <div class="ej2">
+          <!-- modal -->
+          <div class="ej2 ej">
     <article class="ej2" id="ej2">
       <div class="container mt-3">
-            <h2>Ejemplo de Modal Scroll</h2>
+            <h2>Modal Scroll</h2><br><br>
             <p>El componente Modal es un cuadro de diálogo/ventana emergente que se muestra en la parte superior de la
               página actual.</p>
             <p>Pero cuando ponemos mucho contenido dentro de un modal, se añade una barra de desplazamiento a la página.
@@ -176,19 +178,15 @@
             <p>Para incluir la biblioteca y estilos de Bootstrap 5 solo es necesario insertar en el código, en la parte de
               encabezado, lo siguiente: </p><br>
 
-            <div style="background-color: azure; font-size: 1.2rem; width: 90%">
-                <span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
-                  href<span class="attributevaluecolor"
-                    style="color:mediumblue">="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>
-                  rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span><br>
-                <span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor"
-                  style="color:red">
-                  src<span class="attributevaluecolor"
-                    style="color:mediumblue">="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span>
-            </div>
+            <code>
+                <span>&lt;</span>link<span>
+                  href<span>="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>
+                  rel<span>="stylesheet"</span></span><span
+                  >&gt;</span><br>
+                <span>&lt;</span>script<span>
+                  src<span>="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"</span></span><span
+                  >&gt;</span><span>&lt;</span>/script<span>&gt;</span>
+                </code>
       </div>
 
       <!-- The Modal -->
@@ -242,64 +240,62 @@
         </div>
       </div>
     </article>
-  </div>
-
-  <!-- tooltip -->
-  <div class="ej3">
-        <section id="ej3">
-          <!-- Daniel -->
-          <h2>Tooltip</h2><br><br>
-
-          <p>tooltip: Actualiza automáticamente la navegación de Bootstrap y enumera los componentes del grupo en función de la posición de desplazamiento, para indicar qué enlace está actualmente activo en la ventana gráfica.
-            Desplácese por el área debajo de la barra de navegación y observe cómo cambia la clase activa. Los elementos desplegables también se resaltarán.
-            Para agregar fácilmente el comportamiento de scrollspy a la navegación de la barra superior, agregue data-spy="scroll" al elemento que desea espiar (por lo general, este sería el <body>). A continuación, agregue el atributo de destino de datos con el ID o la clase del elemento principal de cualquier componente .nav de Bootstrap.
-            Después de agregar posición: relativa; en su CSS, llame a scrollspy a través de JavaScript
-          </p><br>
-
-          <code>
-             &lt;div class="alumno1container"&gt;
-             &lt;button type="button" class="btn btn-secondary" data-html="true"  data-toggle="tooltip" data-placement="top" title="&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;"&gt;
-                 Tooltip on top &lt;!-- data-html="true" es para que reconozca el html de title--&gt;
-               &lt;/button&gt;
-               &lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right"&gt;
-                 Tooltip on right
-               &lt;/button&gt;
-               &lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;
-                 Tooltip on bottom
-               &lt;/button&gt;
-               &lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;
-                 Tooltip on left
-               &lt;/button&gt;
-               &lt;img src="../Imagenes/cafe-burst.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Titulo" height="100px"&gt;
-               &lt;/div&gt;
-          </code>
-
-          <div class="alumno3container">
-            <button type="button" class="btn btn-secondary" data-html="true"  data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                Tooltip on top <!-- data-html="true" es para que reconozca el html de title-->
-            </button>
-
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
-              Tooltip on right
-            </button>
-
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-              Tooltip on bottom
-            </button>
-
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
-              Tooltip on left
-            </button>
-
-            <img src="../Imagenes/cafe-burst.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Titulo" height="100px">
-            
-
           </div>
-        </section>
-  </div>
-
-  <!-- popover -->
-  <div class="ej4">
+        
+          <!-- tooltip -->
+          <div class="ej3 ej">
+            <section id="ej3">
+              <!-- Daniel -->
+              <h2>Tooltip</h2><br><br>
+            
+              <p>tooltip: Actualiza automáticamente la navegación de Bootstrap y enumera los componentes del grupo en función de la posición de desplazamiento, para indicar qué enlace está actualmente activo en la ventana gráfica.
+                Desplácese por el área debajo de la barra de navegación y observe cómo cambia la clase activa. Los elementos desplegables también se resaltarán.
+                Para agregar fácilmente el comportamiento de scrollspy a la navegación de la barra superior, agregue data-spy="scroll" al elemento que desea espiar (por lo general, este sería el <body>). A continuación, agregue el atributo de destino de datos con el ID o la clase del elemento principal de cualquier componente .nav de Bootstrap.
+                Después de agregar posición: relativa; en su CSS, llame a scrollspy a través de JavaScript
+              </p><br>
+            
+              <code>
+                 &lt;div class="alumno1container"&gt;
+                 &lt;button type="button" class="btn btn-secondary" data-html="true"  data-toggle="tooltip" data-placement="top" title="&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;"&gt;
+                     Tooltip on top &lt;!-- data-html="true" es para que reconozca el html de title--&gt;
+                   &lt;/button&gt;
+                   &lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right"&gt;
+                     Tooltip on right
+                   &lt;/button&gt;
+                   &lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;
+                     Tooltip on bottom
+                   &lt;/button&gt;
+                   &lt;button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;
+                     Tooltip on left
+                   &lt;/button&gt;
+                   &lt;img src="../Imagenes/cafe-burst.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Titulo" height="100px"&gt;
+                   &lt;/div&gt;
+              </code><br><br>
+            
+              <div class="alumno3container">
+                <button type="button" class="btn btn-secondary" data-html="true"  data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                    Tooltip on top <!-- data-html="true" es para que reconozca el html de title-->
+                </button>
+              
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                  Tooltip on right
+                </button>
+              
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                  Tooltip on bottom
+                </button>
+              
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                  Tooltip on left
+                </button>
+              
+                <img src="../Imagenes/cafe-burst.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Titulo" height="100px">
+              </div>
+            </section>
+          </div>
+        
+          <!-- popover -->
+          <div class="ej4 ej">
         <section id="ej4">
           <!-- Alfonso esta es tu area de trabajo -->
           <h2>POPOVER</h2><br><br>
@@ -325,7 +321,7 @@
             var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
             var popoverList = popoverTriggerList.map(function (popoverTriggerEl){return new bootstrap.Popover(popoverTriggerEl)})
           </script>
-        </section>
+        </section><br><br>
 
         <section>
           <h5>CÓDIGO UTILIZADO PARA EL POPOVER:</h5>
@@ -340,10 +336,10 @@
             &lt;/script&gt;
           </code>
         </section>
-  </div>
-
-  <!-- toast -->
-  <div class="ej5">
+          </div>
+        
+          <!-- toast -->
+          <div class="ej5 ej">
           <section id="ej5">
               <!-- Grupo A3 -> Barbara VN: -->
               <h2>Toast</h2><br>
@@ -403,10 +399,10 @@
                 </div>
               </div>
           </section>
-  </div>
-
-  <!-- scrollspy -->
-  <div class="ej6">
+          </div>
+        
+          <!-- scrollspy -->
+          <div class="ej6 ej">
           <section id="ej6">
             <!-- Daniel esta es tu area de trabajo -->
             <h2>Scrollspy</h2><br><br>
@@ -451,7 +447,7 @@
                 &lt;h4 id="three"&gt;three&lt;/h4&gt;
                 &lt;p&gt;...&lt;/p&gt;
               &lt;/div&gt;
-            </code>
+            </code><br><br>
 
             <div class="alumno6container">
               <nav id="navbar-example2" class="navbar navbar-light bg-light">
@@ -477,7 +473,7 @@
                     </div>
                   </li>
                 </ul>
-              </nav>
+              </nav><br><br>
 
               <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
                 <h4 id="fat">@fat</h4>
@@ -499,13 +495,13 @@
 
 
           </section>
-  </div>
-
-  <!-- offcanvas -->
-  <div class="ej7">
+          </div>
+        
+          <!-- offcanvas -->
+          <div class="ej7 ej">
       <section id="ej7">
         <!-- Javi esta es tu area de trabajo -->
-        <article class="ejercicio2" id="ejercicio2" style="padding-left: 60px;">
+        <article class="ejercicio2" id="ejercicio2">
           <div class="offcanvas offcanvas-start" id="demo">
             <div class="offcanvas-header">
               <h2 class="offcanvas-title">Encabezado OffCanvas Sidebar</h2>
@@ -537,27 +533,22 @@
 
             <p>Para incluir la biblioteca y estilos de Bootstrap 5 solo es necesario insertar en el código, en la parte de
               encabezado, lo siguiente: </p><br>
-            <div style="background-color: azure; font-size: 1.2rem; width: 90%">
-              <span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
-                href<span class="attributevaluecolor"
-                  style="color:mediumblue">="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>
-                rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span><br>
+            <code>
+              <span>
+                href<span>="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>
+                rel<span</span></span><span>&gt;</span><br>
 
-              <span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor"
-                style="color:red">
-                src<span class="attributevaluecolor"
-                  style="color:mediumblue">="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;
+              <span>&lt;</span>script<span>
+                src<span>="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"</span></span><span
+                >&gt;</span><span
+                >&lt;</span>/script<span>&gt;
               </span>
-            </div><br>
+            </code><br>
           </div>
         </article>
       </section>
-  </div>
+          </div>
         </div>
-      
       </main>
     </div>
 
