@@ -2,54 +2,75 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/estilos.css" />
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/estilosB.css"/>
+  <title>Bootstrap</title>
 </head>
 
 <body>
+    <div class="container-fluid bg-bgMain">
     <header>
-        <h1>Cabecera principal del Grupa A 1</h1>
+        <h1>Cabecera principal del Grupa A2</h1>
     </header>
     <nav>
-        <div class="navbar">
-            <a href="./index.html"><i class="fa fa-home"></i></a>
-            <a href="index.html">Index</a>
-            <a href="grupoA1.html">GrupoA1</a>
-            <a href="./index.html"></a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()"> grupoA2
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#ej1">Ejercicio 1</a>
-                    <a href="#ej2">Ejercicio 2</a>
-                    <a href="#ej3">Ejercicio 3</a>
-                    <a href="#ej4">Ejercicio 4</a>
-                    <a href="#ej5">Ejercicio 5</a>
-                    <a href="#ej6">Ejercicio 6</a>
-                    <a href="#ej7">Ejercicio 7</a>
-                </div>
-            </div>
-            <a href="grupoA3.html">GrupoA3</a>
-            <a href="grupoB1.html">GrupoB1</a>
-            <a href="grupoB2.html">GrupoB2</a>
-        </div>
+      <div class="navegacion">
+        <br>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grupoA1.html">Grupo A1</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--<a class="nav-link" href="grupoA2.html">Grupo A2</a>-->
+                            <div class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="grupoA2.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                GRUPO A2
+                              </a>
+                              <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item text-fontColor" href="#ej1">PAGINACIÓN</a></li>
+                                <li><a class="dropdown-item text-fontColor" href="#ej2">GRUPOS DE LISTAS</a></li>
+                                <li><a class="dropdown-item text-fontColor" href="#ej3">CARDS</a></li>
+                                <li><a class="dropdown-item text-fontColor" href="#ej4">DROPDOWNS</a></li>
+                                <li><a class="dropdown-item text-fontColor" href="#ej5">COLLAPSE</a></li>
+                                <li><a class="dropdown-item text-fontColor" href="#ej6">NAVS</a></li>
+                                <li><a class="dropdown-item text-fontColor" href="#ej7">NAV BARS</a></li>
+                              </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grupoA3.html">Grupo A3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grupoB2.html">Grupo B2</a>
+                        </li>
+                    </ul>
+                </nav>
+    </div>
     </nav>
     <div class="main">
         <main>
-            <div class="ej1">
+           <div class="container-fluid mt-3">
+            <div class="row">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej1">
                     <!-- Nombre esta es tu area de trabajo -->
-                    <h2>PAGINACIÓN</h2><br><br>
-                    <p>Para crear una paginación básica, hay que agregar la clase pagination a un elemento "ul".<br>
+                    <h2 class="mt-3 text-center text-fontColor">PAGINACIÓN</h2><br><br>
+                    <p class="text-fontColor">Para crear una paginación básica, hay que agregar la clase pagination a un elemento "ul".<br>
                         Luego agregar la clase page-item a cada elemento "li" y una clase page-link a cada enlace "a"
                         dentro de "li".<br>
                         La clase active se utiliza para "resaltar" la página actual.<br>
@@ -62,8 +83,8 @@
                         Otra forma de paginación son las migas de pan: Las clases breadcrumb y breadcrumb-item indican
                         la ubicación de la página actual dentro de una jerarquía de navegación.
                     </p><br>
-                    <div class="alumno1container">
-                        <p>Ejemplo de paginación situada en la izquierda con active en el 1 y disabled en el
+                    <div class="container">
+                        <p class="text-fontColor">Ejemplo de paginación situada en la izquierda con active en el 1 y disabled en el
                             previous.</p>
                         <ul class="pagination">
                             <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
@@ -87,17 +108,19 @@
 
 
                         <ul>
-                            <li class="pagination justify-content-center">Ejemplo de paginación situada en el centro con
+                            <li class="pagination justify-content-center text-fontColor">Ejemplo de paginación situada en el centro con
                                 tamaño aumentado y flechas en lugar de previo y siguiente(& y laquo; para la izquierda y
                                 & y raquo; para la derecha).
                             </li>
-                            <ul class="pagination pagination-lg pagination justify-content-center">
+                            <li>
+                              <ul class="pagination pagination-lg pagination justify-content-center">
                                 <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
                             </ul>
+                            </li>
                         </ul>
                         <code class="pagination justify-content-center">
                             &lt;ul&gt;<br>
@@ -114,16 +137,19 @@
                         </code>
 
                         <ul>
-                            <li class="pagination justify-content-end">Ejemplo de paginación situada a la derecha con
+                            <li class="pagination justify-content-end text-fontColor">Ejemplo de paginación situada a la derecha con
                                 con tamaño
-                                disminuido.</li>
-                            <ul class="pagination pagination-sm pagination justify-content-end">
+                                disminuido.
+                            </li>
+                            <li>
+                              <ul class="pagination pagination-sm pagination justify-content-end">
                                 <li class="page-item"><a class="page-link" href="#">Previo</a></li>
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
                             </ul>
+                            </li>
                         </ul>
                         <code class="pagination justify-content-end">
                             &lt;ul&gt;<br>
@@ -139,7 +165,7 @@
                             &lt;/ul&gt;<br>
                         </code>
 
-                        <p>Ejemplo migas de pan con active en Budapest</p>
+                        <p class="text-fontColor">Ejemplo migas de pan con active en Budapest</p>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Fotos</a></li>
                             <li class="breadcrumb-item"><a href="#">2019</a></li>
@@ -161,17 +187,17 @@
                     </div>
                 </section>
             </div>
-            <div class="ej2">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej2">
-                    <h2>GRUPOS DE LISTAS</h2><br><br>
-                    <p>
+                    <h2 class="mt-3 text-center text-fontColor">GRUPOS DE LISTAS</h2><br><br>
+                    <p class="text-fontColor"> 
                         Los grupos de listas son un componente flexible y potente para mostrar una serie de contenidos.
                         En la etiqueta ul le tendremos que agregar .list-group.
                     </p><br>
                     <div class="alumno1container">
                         <ul>
                             <!--justify-content-center-->
-                            <li>Ejemplo básico: una lista desordenada con elementos de lista. para cade etiqueta li le
+                            <li class="text-fontColor">Ejemplo básico: una lista desordenada con elementos de lista. para cade etiqueta li le
                                 agregamos .list-group-item <br>EJEMPLO: <br>
                                 <div class="container">
                                     <div class="row align-items-start">
@@ -201,7 +227,7 @@
                                 </div>
 
                             </li>
-                            <li>Elementos activos: Añadiendo .active a .list-group-item, indicaremos la sección
+                            <li class="text-fontColor">Elementos activos: Añadiendo .active a .list-group-item, indicaremos la sección
                                 activa.<br>EJEMPLO: <br>
                                 <ul class="list-group" style="width: 18rem;">
                                     <li class="list-group-item active">Trabajo de Bootstrap</li>
@@ -214,7 +240,7 @@
                                     &lt;li class="list-group-item active" &gt;Trabajo de Bootstrap &lt;/li &gt;
                                   </code>
                             </li>
-                            <li>Podemos agregar colores añadiendo a .list-group-item otra clase .list-group-item-*, en
+                            <li class="text-fontColor">Podemos agregar colores añadiendo a .list-group-item otra clase .list-group-item-*, en
                                 el * pones el color (primary, secondary, success, danger, warning, info, light,
                                 dark).<br>EJEMPLO: <br>
                                 <ul class="list-group" style="width: 18rem;">
@@ -229,7 +255,7 @@
                                     &nbsp; &lt;li class="list-group-item list-group-item-primary"&gt;Trabajo de Bootstrap&lt;/li&gt;<br>
                                   </code>
                             </li>
-                            <li>También podemos agregar botones(le añadimos list-group-item-action a la etiqueta
+                            <li class="text-fontColor">También podemos agregar botones(le añadimos list-group-item-action a la etiqueta
                                 button), enlaces (le añadimos list-group-item-action a la etiqueta a).
                                 <div class="list-group" style="width: 18rem;">
                                     <button type="button"
@@ -249,19 +275,22 @@
                                         responsive</button>
                                 </div>
                             </li>
-                            <code>
+                            <li>
+                              <code>
                                 &lt;button type="button" class="list-group-item list-group-item-action btn btn-primary" &gt;Trabajo de Bootstrap &lt;/button&gt;<br>
                                 &lt;button type="button" class="list-group-item list-group-item-action btn btn-primary"&gt;Trabajo de Bootstrap &lt;/button&gt;
                             </code>
+                            </li>
+                            
 
                         </ul>
                     </div>
                 </section>
             </div>
-            <div class="ej3">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej3">
-                    <h2>CARDS</h2><br><br>
-                    <p> Una card (tarjeta) es un contenedor de contenido flexible y extensible. Incluye opciones para
+                    <h2 class="mt-3 text-center text-fontColor">CARDS</h2><br><br>
+                    <p class="text-fontColor"> Una card (tarjeta) es un contenedor de contenido flexible y extensible. Incluye opciones para
                         encabezados y pies de página, una amplia variedad de contenido,
                         colores de fondo contextuales y potentes opciones de visualización. Nos permite dar un estilo y
                         una estructura a nuestro contenedor, se construyen con
@@ -270,13 +299,13 @@
                         comenzamos con un div general con class="card". Y dentro ya podemos aplicar estilos con
                         distintas clases de card.
                     </p><br>
-                    <div class="alumno1container">
+                    <div class="container">
                         <ul>
-                            <li>card-header ,card-body, card-footer: nos indica que parte de la card es, cabezera,
+                            <li class="text-fontColor">card-header ,card-body, card-footer: nos indica que parte de la card es, cabezera,
                                 cuerpo o pie de página. </li>
-                            <li>Títulos (se usan al agregarlos .card-title a una etiqueta h ), texto (.card-subtitle a
+                            <li class="text-fontColor">Títulos (se usan al agregarlos .card-title a una etiqueta h ), texto (.card-subtitle a
                                 una etiqueta h para agregar un subtítulo, y .card-title para agregar un título) y
-                                enlaces (agregar .card-link a una etiqueta <a>)
+                                enlaces (agregar .card-link a una etiqueta)
                                     <br> EJEMPLO:
 
 
@@ -287,8 +316,8 @@
                                             <p class="card-text">Un texto de ejemplo rápido para construir sobre el
                                                 título de la tarjeta y componer la mayor parte del contenido de la
                                                 tarjeta.</p>
-                                            <a href="#" class="card-link">Un link</a>
-                                            <a href="#" class="card-link">Otro link</a>
+                                            <a href="#4" class="card-link">link</a>
+                                            <a href="#1" class="card-link">Otro link</a>
                                         </div>
                                     </div>
                                     <code>
@@ -303,14 +332,14 @@
                                     &lt;/div&gt;<br>
                                 </code>
                             </li>
-                            <li>Imágenes con .card-img-top en la etiqueta img coloca una imagen en la parte superior de
+                            <li class="text-fontColor">Imágenes con .card-img-top en la etiqueta img coloca una imagen en la parte superior de
                                 la tarjeta, o con card-img-bottom lo coloca en la parte inferior. <br>
                                 Botones: agregando .btn btn-primary a una etiqueta a podemos crear un estilo de un
                                 botón.
 
 
                             </li>
-                            <li>Podemos agregar colores añadiendo a .list-group-item otra clase .list-group-item-*, en
+                            <li class="text-fontColor">Podemos agregar colores añadiendo a .list-group-item otra clase .list-group-item-*, en
                                 el * pones el color (primary, secondary, success, danger, warning, info, light, dark).
                                 <br> EJEMPLO:
 
@@ -346,7 +375,7 @@
 
 
                             </li>
-                            <li> Un ejemplo aplicando todo junto:
+                            <li class="text-fontColor"> Un ejemplo aplicando todo junto:
                                 <br> EJEMPLO:
 
                                 <div class="row align-items-start">
@@ -401,10 +430,10 @@
                     </div>
                 </section>
             </div>
-            <div class="ej5">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej4">
-                    <h2>DROPDOWNS</h2><br><br>
-                    <p>Los dropdowns son menús desplegables que permiten al usuario, tras pulsar un botón con un
+                    <h2 class="mt-3 text-center text-fontColor">DROPDOWNS</h2><br><br>
+                    <p class="text-fontColor">Los dropdowns son menús desplegables que permiten al usuario, tras pulsar un botón con un
                         nombre que abarca unas opciones relativas al mismo, elegir un valor de una lista
                         predefinida.
                     </p><br>
@@ -419,7 +448,7 @@
                                 <li><a class="dropdown-item" href="#">Grupo A3</a></li>
                                 <li><a class="dropdown-item" href="#">Grupo B1</a></li>
                                 <li><a class="dropdown-item" href="#">Grupo B2</a></li>
-                                <li><hr class="dropdown-divider"></hr></li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-header"> href="#">Funcionalidades grupo A2</a></li>
                                 <li><a class="dropdown-item disabled" href="#">Paginación</a></li>
                                 <li><a class="dropdown-item active" href="#">Grupos de listas</a></li>
@@ -463,10 +492,10 @@
                     </code>
                 </section>
             </div>
-            <div class="ej5">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej5">
-                    <h2>COLLAPSE</h2><br><br>
-                    <p>Aprenderás sobre el uso de Collapse pulsando en el siguiente botón:</p><br>
+                    <h2 class="mt-3 text-center text-fontColor">COLLAPSE</h2><br><br>
+                    <p class="text-fontColor">Aprenderás sobre el uso de Collapse pulsando en el siguiente botón:</p><br>
                     <div class="collapse_F">
                         <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#texto">
                             Uso de Collapse</button><br><br>
@@ -490,10 +519,10 @@
 
                 </section>
             </div>
-            <div class="ej6">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej6">
-                    <h2>NAVS</h2><br><br>
-                    <p> La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base nav hasta los estados activo y deshabilitado.
+                    <h2 class="mt-3 text-center text-fontColor">NAVS</h2><br><br>
+                    <p class="text-fontColor"> La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base nav hasta los estados activo y deshabilitado.
                       El componente base nav está construido con flexbox y proporciona una base sólida para construir todo tipo de componentes de navegación.
                       Incluye algunas anulaciones de estilo (para trabajar con listas), algo de relleno de enlaces para áreas de acceso más grandes y estilo básico deshabilitado.</p><br>
                     <div class="alumno1container">
@@ -517,7 +546,7 @@
                               <a class="nav-link disabled">Desabilitado</a>
                             </li>
                           </ul>
-                          <p>
+                          <p class="text-fontColor">
                             Si desea crear un menú horizontal simple, agregue la clase nav  a un elemento ul, seguido de la clase nav-item para cada uno de los elementos li y agregue la clase nav-link a sus enlaces:
                           </p>
                           <code>
@@ -554,7 +583,7 @@
                               <a class="nav-link disabled">Desabilitado</a>
                             </li>
                           </ul>
-                          <p>
+                          <p class="text-fontColor">
                             Para este ejemplo se ha agregado la clase justify-content-center para centrar la navegación. Y si quisieramos alinearla a la derecha usariamos la clase justify-content-end.
                           </p>
 
@@ -597,7 +626,7 @@
                             <a class="nav-link disabled">Desabilitado</a>
                           </li>
                         </ul>
-                        <p>
+                        <p class="text-fontColor"> 
                           Para apilar tu navegación y darle un aspecto vertical lo logramos cambiando la dirección del elemento flexible con la utilidad de la clase flex-column.
                         </p>
                         <code>
@@ -634,7 +663,7 @@
                             <a class="nav-link disabled">Desabilitado</a>
                           </li>
                         </ul>
-                        <p>
+                        <p class="text-fontColor">
                           En este apartado podremos observar como podriamos convertir el menú de navegación en pestañas de navegación con la clase nav-tabs. Agregue la clase active al enlace activo/actual. Si desea que las pestañas se puedan alternar, vea el último ejemplo en esta página.
                         </p>
 
@@ -662,7 +691,7 @@
                     <div class="container">
                       <div class="row">
                         <div class="col">
-                          <h3>PILLS (Navegación Pastillas)</h3>
+                          <h3 >PILLS (Navegación Pastillas)</h3>
                           
                           <ul class="nav nav-pills">
                             <li class="nav-item">
@@ -678,7 +707,7 @@
                               <a class="nav-link disabled">Desabilitado</a>
                             </li>
                           </ul>
-                          <p>
+                          <p class="text-fontColor">
                             Para convertir nuestro menú de navegación NAV a un PILLS vamos a hacer uso de una nueva clase la cual colocaremos en el elemento ul esta clase es la nav-pills .
                           </p>
                           <code>
@@ -715,7 +744,7 @@
                               <a class="nav-link disabled">Desabilitado</a>
                             </li>
                           </ul>
-                          <p>
+                          <p class="text-fontColor">
                             Para poder justificar las navegacion tipo pastillas, forzamos el contenido para que se pueda extender en el ancho total disponible usando la clase nav-fill la cual se encargara de llenar proporcionalmente el espacio disponible.
                           </p>
 
@@ -776,22 +805,22 @@
                     </div>
                 </section>
             </div>
-            <div class="ej7">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
                 <section id="ej7">
-                    <h2>NAV BARS</h2><br><br>
-                    <p> Una barra de navegación es un encabezado de navegación que se coloca en la parte superior de la página. Con Bootstrap, una barra de navegación puede extenderse o contraerse, según el tamaño de la pantalla.</p>
-                    <p>Esto es lo que necesita saber antes de comenzar con la barra de navegación:</p>
+                    <h2 class="mt-3 text-center text-fontColor">NAV BARS</h2><br><br>
+                    <p class="text-fontColor"> Una barra de navegación es un encabezado de navegación que se coloca en la parte superior de la página. Con Bootstrap, una barra de navegación puede extenderse o contraerse, según el tamaño de la pantalla.</p>
+                    <p class="text-fontColor">Esto es lo que necesita saber antes de comenzar con la barra de navegación:</p>
                     <ul>
-                        <li>
+                        <li class="text-fontColor">
                           Las barras de navegación requieren un envoltorio para las
                           clases.
                         </li>
-                        <li>
+                        <li class="text-fontColor">
                           Las barras de navegación y su contenido son fluidos de forma
                           predeterminada. Cambie el contenedor para limitar su ancho
                           horizontal de diferentes maneras.
                         </li>
-                        <li>
+                        <li class="text-fontColor">
                           Las barras de navegación responden de manera predeterminada,
                           pero puede modificarlas fácilmente para cambiar eso.
                         </li>
@@ -808,7 +837,7 @@
                                     <a class="navbar-brand" href="#">LOGO</a>
                                   </div>
                                 </nav>
-                                <p> En este ejemplo el navbar-brand puede aplicar a la mayoría de los elementos, pero un ancla funciona mejor, ya que algunos elementos pueden requerir clases de utilidad o estilos personalizados.
+                                <p class="text-fontColor"> En este ejemplo el navbar-brand puede aplicar a la mayoría de los elementos, pero un ancla funciona mejor, ya que algunos elementos pueden requerir clases de utilidad o estilos personalizados.
                     
                                   Podemos agregar su texto o logo dentro de un elemento con la clase navbar-brand .</p>
                                 <code>
@@ -825,12 +854,12 @@
                                 <nav class="navbar navbar-light" style="background-color: #a7cbe6;">
                                   <div class="container-fluid">
                                     <a class="navbar-brand" href="#">
-                                      <img src="/PROYECTO-BOOTSTRAP/MyProject.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                      <img src="images/MyProject.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                                       LOGO
                                     </a>
                                   </div>
                                 </nav>
-                                <p>En este siguiente ejemplo podemos ver que podriamos utilizar imagen y texto para la barra de navegación, esto se puede hacer con el uso de algunas utilidades adicionales para mostrarlas al mismo tiempo. Tenga en cuenta la adición de .d-inline-blocky .align-text-top en el img</p>
+                                <p class="text-fontColor">En este siguiente ejemplo podemos ver que podriamos utilizar imagen y texto para la barra de navegación, esto se puede hacer con el uso de algunas utilidades adicionales para mostrarlas al mismo tiempo. Tenga en cuenta la adición de .d-inline-blocky .align-text-top en el img</p>
                     
                                 <code>
                                   &lt;nav class="navbar navbar-light bg-dark"&gt;<br>
@@ -875,7 +904,7 @@
                                   </div>
                                 </div>
                               </nav>
-                              <p>Los enlaces de navegación de la barra de navegación se basan en nuestras .nav opciones con su propia clase de modificador y requieren el uso de clases de alternancia para un estilo receptivo adecuado. La navegación en las barras de navegación también crecerá para ocupar tanto espacio horizontal como sea posible para mantener el contenido de la barra de navegación alineado de forma segura.</p>
+                              <p class="text-fontColor">Los enlaces de navegación de la barra de navegación se basan en nuestras .nav opciones con su propia clase de modificador y requieren el uso de clases de alternancia para un estilo receptivo adecuado. La navegación en las barras de navegación también crecerá para ocupar tanto espacio horizontal como sea posible para mantener el contenido de la barra de navegación alineado de forma segura.</p>
                                 <code>&lt;nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a7cbe6;"&gt;<br>
                                 &nbsp; &lt;div class="container-fluid"&gt;<br>
                                 &nbsp;&nbsp; &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;<br>
@@ -921,7 +950,7 @@
                                           <a class="nav-link" href="#">Enlace 2</a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropodownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Enlace Desplegable
                                           </a>
                                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -934,7 +963,7 @@
                                     </div>
                                   </div>
                                 </nav>
-                                <p>También puede usar menús desplegables en su barra de navegación. Los menús desplegables requieren un elemento envolvente para el posicionamiento, así que asegúrese de usar elementos separados y anidados para .nav-itemy .nav-linkcomo se muestra a continuación.</p>
+                                <p class="text-fontColor">También puede usar menús desplegables en su barra de navegación. Los menús desplegables requieren un elemento envolvente para el posicionamiento, así que asegúrese de usar elementos separados y anidados para .nav-itemy .nav-linkcomo se muestra a continuación.</p>
                     
                             <code>
                               &lt;nav class="navbar navbar-expand-lg navbar-dark bg-primary"&gt;<br>
@@ -992,7 +1021,7 @@
                                 </div>
                               </nav>
 
-                              <p>A veces, desea utilizar el complemento de colapso para activar un elemento contenedor para el contenido que se encuentra estructuralmente fuera del archivo .navbar. ¡ Debido a que nuestro complemento funciona en idy data-bs-targetemparejando, eso se hace fácilmente!</p>
+                              <p class="text-fontColor">A veces, desea utilizar el complemento de colapso para activar un elemento contenedor para el contenido que se encuentra estructuralmente fuera del archivo .navbar. ¡ Debido a que nuestro complemento funciona en idy data-bs-targetemparejando, eso se hace fácilmente!</p>
 
                               <code>
                                 &lt;div class="collapse" id="navbarToggleExternalContent"&gt;<br>
@@ -1023,8 +1052,8 @@
                                   </form>
                                 </div>
                               </nav>
-                              <p>Se puede colocar varios controles de formulario y componentes dentro de una barra de navegación:</p>
-                              <p>Los elementos secundarios inmediatos de .navbar tienen un diseño flexible y se establecerán de forma predeterminada en justify-content: space-between. Use utilidades flexibles adicionales según sea necesario para ajustar este comportamiento.</p>
+                              <p class="text-fontColor">Se puede colocar varios controles de formulario y componentes dentro de una barra de navegación:</p>
+                              <p class="text-fontColor">Los elementos secundarios inmediatos de .navbar tienen un diseño flexible y se establecerán de forma predeterminada en justify-content: space-between. Use utilidades flexibles adicionales según sea necesario para ajustar este comportamiento.</p>
                               
                               <code>
                                 &lt;nav class="navbar navbar-light bg-light"&gt;<br>
@@ -1043,7 +1072,7 @@
                         <!-- cuarto grupo de ejemplos -->
                         <div class="container">
                           <h3>Barra de navegación fuera del lienzo Offcanvas</h3>
-                          <p>
+                          <p class="text-fontColor">
                             Transforme su barra de navegación que se expande y contrae en un cajón
                             fuera del lienzo con el complemento fuera del lienzo. Extendemos los
                             estilos predeterminados de offcanvas y usamos nuestras
@@ -1204,6 +1233,8 @@
                     </div>
                 </section>
             </div>
+          </div>
+        </div>
         </main>
     </div>
     <footer>
@@ -1226,6 +1257,7 @@
         </div>
     </footer>
     <script src="./JS/scripts.js"></script>
+    </div>
 </body>
 
 </html>
