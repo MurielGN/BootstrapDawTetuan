@@ -13,6 +13,47 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="./CSS/estilosB.css"/>
   <link rel="stylesheet" type="text/css" href="./CSS/range.css"/>
+  <style>
+      *{
+   margin: 0;
+   padding: 0; 
+}
+body{
+    background-color: aquamarine;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.box{
+    background-color: rgb(231, 231, 231);
+    padding: 20px 20px 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+    display: flex;
+    align-items: center;
+}
+.box .value{
+    color: black;
+}
+.box .slider{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items:center;
+    margin-right: 15px;
+}
+
+.box .slider input{
+    height: 10px;
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,2);
+}
+  </style>
   <title>Bootstrap</title>
 </head>
 
@@ -89,7 +130,7 @@
                         </code><br><br>
 
                         <form>
-                            <h4><i>¿Con qué frecuencia sales a comer a restaurantes?</i></h4>
+                            <h4 class="text-fontColor"><i>¿Con qué frecuencia sales a comer a restaurantes?</i></h4>
                             <!--
                              SELECT
                              He utlizado un select de forma desplegable para que me muestre varias opciones y que el usuario pueda escoger una.
@@ -101,8 +142,8 @@
                            </select>
 
                         <br><br>
-                        <h3>Select sin ser desplegable</h3>
-                        <p>El select nos permite crear un menu en este caso no es desplegable y el usuario tiene que <b>scrolear para ver todas las opciones.</b></p>
+                        <h3 class="text-fontColor">Select sin ser desplegable</h3>
+                        <p class="text-fontColor">El select nos permite crear un menu en este caso no es desplegable y el usuario tiene que <b>scrolear para ver todas las opciones.</b></p>
                         <code>
                             &lt;form&gt;<br>
                             &lt;h4&gt;Que estilo de comida le gusta:&lt;/h4&gt;<br>
@@ -119,7 +160,7 @@
                                 &lt;option value="5"&gt;Alemana&lt;/option&gt;<br>
                             &lt;/select&gt;                    
                         </code><br><br>
-                        <h4><i>¿Qué estilo de comida le gusta?</i></h4>
+                        <h4 class="text-fontColor"><i>¿Qué estilo de comida le gusta?</i></h4>
                         <!--
                         SELECT
                         Aquí he vuelto a utilizar un select pero esta vez no es desplegable sino que aparecen todas las opciones directamenete
@@ -611,6 +652,14 @@
         </div>
     </footer>
     <script src="./JS/scripts.js"></script>
+    <script>
+        const slider = document.querySelector("#range");
+        const value = document.querySelector(".valuerange");
+        value.textContent = slider.value;
+        slider.oninput = function(){
+            value.textContent = this.value;
+        }
+  </script>
     </div>
 </body>
 
