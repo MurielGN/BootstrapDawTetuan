@@ -30,10 +30,10 @@
         background-color: #ededed;
     }
     pre code {
-    background: #f4f4f496;
-    border: 1px solid #ddd;
-    border-radius: 2rem;
-    color: rgb(58, 58, 58);
+    background: #f4f4f414;
+    border: 1px solid #dddddd62;
+    border-radius: 1.5rem;
+    color: #00C6CF;
     page-break-inside: avoid;
     font-family: monospace;
     font-size: 15px;
@@ -47,9 +47,8 @@
     }
 
     /* ↓ Prueba ↓ */
-    #ejemploFlex
-    {
-        background-color: antiquewhite;
+    #ejemploFlex{
+        background-color: #faebd725;
     }
   
   </style>
@@ -61,25 +60,43 @@
     <h1>Cabecera principal del Grupa A 1</h1>
   </header>
   <nav>
-    <div class="navbar">
-      <a href="./index.html"><i class="fa fa-home"></i></a>
-      <a href="index.html">Index</a>
-      <a href="./index.html"></a>
-      <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction()"> grupoA1
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="#ej1">Ejercicio 1</a>
-          <a href="#ej2">Ejercicio 2</a>
-          <a href="#ej3">Ejercicio 3</a>
-        </div>
-      </div>
-      <a href="grupoA2.html">GrupoA2</a>
-      <a href="grupoA3.html">GrupoA3</a>
-      <a href="grupoB1.html">GrupoB1</a>
-      <a href="grupoB2.html">GrupoB2</a>
-    </div>
+    <div class="navegacion">
+      <br>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="grupoA1.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grupo A1
+                </a>
+                
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-fontColor" href="#ej1">TIPOGRAFIA</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej2">COLORES</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej3">TABLAS E IMAGENES</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej4">JUMBOTRON</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej5">UTILES Y FLEXBOX</a></li>
+                </ul>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="grupoA2.html">Grupo A2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grupoA3.html">Grupo A3</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="grupoB2.html">Grupo B2</a>
+          </li>
+      </ul>
+      </nav>
+  </div>
   </nav>
 
   <div class="main">
@@ -103,21 +120,24 @@
             </p>
             
 
-            <h1>H1, semibold 36px</h1><br>
-            <h2>H2, semibold 30px</h2><br>
-            <h3>H3, semibold 24px</h3><br>
-            <h4>H4, semibold 18px</h4><br>
-            <h5>H5, semibold 14px</h5><br>
-            <h6>H6, semibold 12px</h6><br>
-            <h4>Código fuente</h4>
-            <pre><code>
-              &lt;h1&gt;H1, semibold 36px&lt;/h1&gt;
-              &lt;h2&gt;H2, semibold 30px&lt;/h2&gt;
-              &lt;h3&gt;H3, semibold 24px&lt;/h3&gt;
-              &lt;h4&gt;H4, semibold 18px&lt;/h4&gt;
-              &lt;h5&gt;H5, semibold 14px&lt;/h5&gt;
-              &lt;h6&gt;H6, semibold 12px&lt;/h6&gt;
-            </code></pre><br>
+            <h1 class="text-fontColor">H1, semibold 36px</h1><br>
+            <h2 class="text-fontColor">H2, semibold 30px</h2><br>
+            <h3 class="text-fontColor">H3, semibold 24px</h3><br>
+            <h4 class="text-fontColor">H4, semibold 18px</h4><br>
+            <h5 class="text-fontColor">H5, semibold 14px</h5><br>
+            <h6 class="text-fontColor">H6, semibold 12px</h6><br>
+
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
+            <pre>
+              <code>
+                &lt;h1&gt;H1, semibold 36px&lt;/h1&gt;
+                &lt;h2&gt;H2, semibold 30px&lt;/h2&gt;
+                &lt;h3&gt;H3, semibold 24px&lt;/h3&gt;
+                &lt;h4&gt;H4, semibold 18px&lt;/h4&gt;
+                &lt;h5&gt;H5, semibold 14px&lt;/h5&gt;
+                &lt;h6&gt;H6, semibold 12px&lt;/h6&gt;
+              </code>
+            </pre><br>
             <h3 class="mt-3 text-center text-fontColor">Otros elementos de Bootstrap</h3>
             <p class="text-fontColor">
               <b>mark</b><br>
@@ -558,7 +578,7 @@
           <div class="alumno1container">
             <div class="jumbotron">
               <div class="container">
-                <h1>Funcionamiento del Jumbotron</h1>
+                <h1 class="mt-3 text-center text-fontColor">Funcionamiento del Jumbotron</h1>
                 <p class="text-fontColor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                   nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

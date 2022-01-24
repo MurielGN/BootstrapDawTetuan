@@ -31,67 +31,54 @@
 <body>
   
   <div class="container-fluid bg-bgMain">
-    <header>
-        
-        <div class="navegacion">
-          <br>
-          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <!--div class="navbar">
-              <a href="./index.html"><i class="fa fa-home"></i></a>
-              <a href="index.html">Index</a>
-              <a href="grupoA1.html">GrupoA1</a>
-              <a href="grupoA2.html">GrupoA2</a>
-              <a href="grupoA3.html">GrupoA3</a>
-              <a href="./index.html"></a>
-      
-              <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()"> grupoA3
-                <i class="fa fa-caret-down"></i>
-                </button>
-      
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#ej1">Ejercicio 1: Carrusel</a>
-                    <a href="#ej2">Ejercicio 2: Modal</a>
-                    <a href="#ej3">Ejercicio 3: Tooltip</a>
-                    <a href="#ej4">Ejercicio 4: Popover</a>
-                    <a href="#ej5">Ejercicio 5: Toast</a>
-                    <a href="#ej6">Ejercicio 6: Scrollspy</a>
-                    <a href="#ej7">Ejercicio 7: Offcanvas</a>
-                </div>
-              </div>
-      
-              <a href="grupoB1.html">GrupoB1</a>
-              <a href="grupoB2.html">GrupoB2</a>
-            </div-->
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoA1.html">Grupo A1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoA2.html">Grupo A2</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoA3.html">Grupo A3</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoB1.html">Grupo B1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoB2.html">Grupo B2</a>
-              </li>
-          </ul>
-        </nav>
-        </div>
-        <div class="encabezado2">
 
-          <br>
-          <br>
-          <h1>Cabecera principal del Grupo A3</h1>
-        </div>
+    <header>
+      <h1>Cabecera principal del Grupa A 1</h1>
     </header>
+    <nav>
+      <div class="navegacion">
+        <br>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grupoA1.html">Grupo A1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grupoA2.html">Grupo A2</a>
+            </li>
+            <!--ERROR: NO DESPLIEGA-->
+            <li class="nav-item">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="grupoA3.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grupo A3
+                </a>
+                
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-fontColor" href="#ej1">carousel</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej2">modal</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej3">tooltip</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej4">popover</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej5">toast</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej6">scrollspy</a></li>
+                  <li><a class="dropdown-item text-fontColor" href="#ej7">offcanvas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grupoB2.html">Grupo B2</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    </nav>
+
+          
 
     <div class="main">
       <main>
@@ -304,7 +291,7 @@
                       </button>
                     
                       <img src="../Imagenes/cafe-burst.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Titulo" height="100px">
-                    </div>
+                    </div><br>
                   </section>
                 </div>
               </div>
@@ -351,7 +338,7 @@
                         var popoverList = popoverTriggerList.map(function (popoverTriggerEl){ return new bootstrap.Popover(popoverTriggerEl)})
                       &lt;/script&gt;
                     </code>
-                  </section>
+                  </section><br>
                 </div>
               </div>
             
@@ -413,7 +400,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div><br>
                   </section>
                 </div>
               </div>
@@ -564,10 +551,11 @@
                           </span>
                         </code><br>
                       </div>
-                    </article>
+                    </article><br>
                   </section>
                 </div>
               </div>
+              
             <!--</div>-->
           </div>
         </div>

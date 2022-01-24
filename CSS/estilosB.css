@@ -3636,5 +3636,5 @@ textarea.form-control-lg { min-height: calc(1.5em + (1rem + 2px)); }
   .d-print-inline-flex { display: -webkit-inline-box !important; display: -ms-inline-flexbox !important; display: inline-flex !important; }
   .d-print-none { display: none !important; } }
 
-code { font-size: 0.875em; color: antiquewhite; word-wrap: break-word; }
+code { font-size: 0.875em; color: #00C6CF; word-wrap: break-word; }
 /*# sourceMappingURL=estilosB.css.map */
