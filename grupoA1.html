@@ -5,11 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./CSS/estilos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="./CSS/estilos.css" />-->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/estilosB.css"/>
+  <!-- Favicon  -->
+  <link rel="icon" href="images/icons8-oreja.svg" type="faviconimage/x-icon">
   <title>Bootstrap</title>
   <style>
     /*ESTILOS DE DAVID */
@@ -24,9 +30,10 @@
         background-color: #ededed;
     }
     pre code {
-    background: #f4f4f4;
+    background: #f4f4f496;
     border: 1px solid #ddd;
-    color: #666;
+    border-radius: 2rem;
+    color: rgb(58, 58, 58);
     page-break-inside: avoid;
     font-family: monospace;
     font-size: 15px;
@@ -45,10 +52,11 @@
         background-color: antiquewhite;
     }
   
-    </style>
+  </style>
 </head>
 
 <body>
+  <div class="container-fluid bg-bgMain">
   <header>
     <h1>Cabecera principal del Grupa A 1</h1>
   </header>
@@ -73,123 +81,141 @@
       <a href="grupoB2.html">GrupoB2</a>
     </div>
   </nav>
+
   <div class="main">
     <main>
-      <div class="ej1">
-        <section id="ej1">
-          <!-- Marta Morán -->
-          <h2>Tipografía en Bootstrap 5</h2><br><br>
-          <h3>Configuración por defecto de Bootstrap 5</h3>
-          &#10024;<b>Font-size</b>: 16px.<br><br>
-          &#10024;<b>line-height</b>: 1.5.<br><br>
-          &#10024;<b>font-family </b>: «Helvetica Neue», Helvetica, Arial, sans-serif.<br><br>
-          &#10024;<b>Margin</b>: Los elementos parrafo tienen margin-top: 0 y margin-bottom: 1rem<br><br>
-          &#10024;<b>Encabezados</b>: Del h1-h6. Los diseños de encabezados en Bootstrap son diferentes a los
-          de
-          HTML, siendo estos últimos ligeramente más pequeños.<br><br><br>
+      <div class="container-fluid mt-3">
+        <div class="row">
 
-          <h1>H1, semibold 36px</h1><br>
-          <h2>H2, semibold 30px</h2><br>
-          <h3>H3, semibold 24px</h3><br>
-          <h4>H4, semibold 18px</h4><br>
-          <h5>H5, semibold 14px</h5><br>
-          <h6>H6, semibold 12px</h6><br>
-          <h4>Código fuente</h4>
-          <pre><code>
-            &lt;h1&gt;H1, semibold 36px&lt;/h1&gt;
-            &lt;h2&gt;H2, semibold 30px&lt;/h2&gt;
-            &lt;h3&gt;H3, semibold 24px&lt;/h3&gt;
-            &lt;h4&gt;H4, semibold 18px&lt;/h4&gt;
-            &lt;h5&gt;H5, semibold 14px&lt;/h5&gt;
-            &lt;h6&gt;H6, semibold 12px&lt;/h6&gt;
-          </code></pre><br>
-          <h3>Otros elementos de Bootstrap</h3>
-          <b>mark</b><br>
-          A este elemento de marcación, Bootstrap le añade un diseño tipo resaltado con rotulador.<br>
-          Esto es una prueba de <mark>mark</mark>.<br><br>
-          <b>abbr</b><br>
-          Este elemento que sirve para añadir significado a las abreviaciones. Bootstrap le añade un
-          subrayado especial para que se vea que esconde ese texto explicativo.<br>
-          <abbr title="Desarrollo de Aplicaciones Web">DAW</abbr> es un grado superior.<br><br>
-          <b>code</b><br>
-          Esta etiqueta se usa para hacer referencia a códigos reservados. Bootstrap lo presenta con otro
-          color.<br>
-          Esto es un <code>code</code><br><br>
-          <b>kbd</b><br>
-          En HTML se usa para identificar comandos de teclado o formulas, se presentan con un color de
-          fondo negro sobre letra en blanco.<br>
-          Esto es <kbd>kbd + Y</kbd><br><br>
-          <b>dl, dt, dd</b><br>
-          Estas etiquetas son para definir definiciones de términos. Bootstrap resalta la palabra que
-          luego se
-          define.<br>
-          <dl>
-            <dt>Bootstrap</dt>
-            <dd>- Es un FrameWork.</dd>
-          </dl>
-          <b>small</b><br>
-          En Boostrap se usa para crear un titular más pequeño debajo del encabezado.
-          <h3>SMALL <small class="lead">Prueba small</small></h3><br>
-          <b>blackquote</b><br>
-          Esta etiqueta se usa para cuando introducimos un texto copiado de otra fuente. Bootstrap añade a la
-          etiqueta footer un diseño tipo para señalar que la fuente es otro.
-          <blockquote>
-            Este es un texto de prueba.
-            <footer class="blockquote-footer">Otro tipo de fuente</footer>
-          </blockquote><br><br>
+          <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+            <div class="ej1">
+          <section id="ej1">
+            <!-- Marta Morán -->
+            <h2 class="mt-3 text-center text-fontColor">Tipografía en Bootstrap 5</h2><br><br>
+            <h3 class="mt-3 text-center text-fontColor">Configuración por defecto de Bootstrap 5</h3>
+            <p class="text-fontColor">
+              &#10024;<b>Font-size</b>: 16px.<br><br>
+              &#10024;<b>line-height</b>: 1.5.<br><br>
+              &#10024;<b>font-family </b>: «Helvetica Neue», Helvetica, Arial, sans-serif.<br><br>
+              &#10024;<b>Margin</b>: Los elementos parrafo tienen margin-top: 0 y margin-bottom: 1rem<br><br>
+              &#10024;<b>Encabezados</b>: Del h1-h6. Los diseños de encabezados en Bootstrap son diferentes a los
+              de HTML, siendo estos últimos ligeramente más pequeños.<br><br><br>
+            </p>
+            
 
-          <h3>Etiquetas de tipografía</h3>
-
-          &#10024;<b>.font-weight-bold, .font-weight-normal, .font-weight-light</b>. Permite añadir grosor a
-          la fuente.<br><br>
-
-          &#10024;<b>.font-italic Italica</b>. Añade cursiva.<br><br>
-
-          &#10024;<b>.lead</b>. Destaca el elemento con una fuente un poco más grande.<br><br>
-
-          &#10024;<b>.small</b>. Añade una fuente más pequeña.<br><br>
-
-          &#10024;<b>.small</b>. Etiquetas para alinear el texto dentro de un bloque.<br><br>
-
-          &#10024;<b>.text-lowercase, .text-uppercase, .text-capitalize</b>. Estos atributos permiten hacer
-          que el texto sea todo minúsculas, mayúsculas, o que todas las palabras empiecen por
-          mayúsculas.<br><br>
-
-          &#10024;<b>.list-unstyled</b>. Quita el list-style y margin-left en elementos de lista ul u
-          ol.<br><br>
-
-          &#10024;<b>.list-inline</b>. Coloca los elementos li de una lista en una línea horizontal.<br><br><br>
-          <div>
+            <h1>H1, semibold 36px</h1><br>
+            <h2>H2, semibold 30px</h2><br>
+            <h3>H3, semibold 24px</h3><br>
+            <h4>H4, semibold 18px</h4><br>
+            <h5>H5, semibold 14px</h5><br>
+            <h6>H6, semibold 12px</h6><br>
             <h4>Código fuente</h4>
             <pre><code>
-                            Esto es una prueba de &lt;mark&gt;mark&lt;/mark&gt;
-                            &lt;abbr&gt; title="Desarrollo de Aplicaciones Web"&gt;DAW&lt;/abbr&gt; es un grado superior.
-                            Esto es un &lt;code&gt;code&lt;/code&gt;
-                            Esto es &lt;kbd&gt;kbd + Y&lt;/kbd&gt;
-                            &lt;dl&gt;
-                                &lt;dt&gt;Bootstrap&lt;/dt&gt;
-                                &lt;dd&gt;- Es un FrameWork.&lt;/dd&gt;
-                            &lt;/dl&gt;
-                            &lt;h3&gt;SMALL&lt;small class="lead"&gt;Prueba small&lt;/small&gt;&lt;/h3&gt;
-                            &lt;blockquote&gt;
-                                Este es un texto de prueba.
-                                &lt;footer class="blockquote-footer"&gt;Otro tipo de fuente&lt;/footer&gt;
-                            &lt;/blockquote&gt;
-                        </code></pre>
-          </div>
-        </section>
-      </div>
+              &lt;h1&gt;H1, semibold 36px&lt;/h1&gt;
+              &lt;h2&gt;H2, semibold 30px&lt;/h2&gt;
+              &lt;h3&gt;H3, semibold 24px&lt;/h3&gt;
+              &lt;h4&gt;H4, semibold 18px&lt;/h4&gt;
+              &lt;h5&gt;H5, semibold 14px&lt;/h5&gt;
+              &lt;h6&gt;H6, semibold 12px&lt;/h6&gt;
+            </code></pre><br>
+            <h3 class="mt-3 text-center text-fontColor">Otros elementos de Bootstrap</h3>
+            <p class="text-fontColor">
+              <b>mark</b><br>
+            A este elemento de marcación, Bootstrap le añade un diseño tipo resaltado con rotulador.<br>
+            Esto es una prueba de <mark>mark</mark>.<br><br>
+            <b>abbr</b><br>
+            Este elemento que sirve para añadir significado a las abreviaciones. Bootstrap le añade un
+            subrayado especial para que se vea que esconde ese texto explicativo.<br>
+            <abbr title="Desarrollo de Aplicaciones Web">DAW</abbr> es un grado superior.<br><br>
+            <b>code</b><br>
+            Esta etiqueta se usa para hacer referencia a códigos reservados. Bootstrap lo presenta con otro
+            color.<br>
+            Esto es un <code>code</code><br><br>
+            <b>kbd</b><br>
+            En HTML se usa para identificar comandos de teclado o formulas, se presentan con un color de
+            fondo negro sobre letra en blanco.<br>
+            Esto es <kbd>kbd + Y</kbd><br><br>
+            <b>dl, dt, dd</b><br>
+            Estas etiquetas son para definir definiciones de términos. Bootstrap resalta la palabra que
+            luego se
+            define.<br>
+            <dl>
+              <dt class="text-fontColor">Bootstrap</dt>
+              <dd class="text-fontColor">- Es un FrameWork.</dd>
+            </dl>
 
-      <!--Carol-->
-      <div class="ej2">
+            <b class="text-fontColor">small</b><br>
+            <p class="text-fontColor">En Boostrap se usa para crear un titular más pequeño debajo del encabezado.</p>
+            <h3 class="mt-3 text-center text-fontColor">SMALL <small class="lead">Prueba small</small></h3><br>
+            <b class="text-fontColor">blackquote</b><br>
+            <p class="text-fontColor">Esta etiqueta se usa para cuando introducimos un texto copiado de otra fuente. Bootstrap añade a la
+            etiqueta footer un diseño tipo para señalar que la fuente es otro.</p>
+            <blockquote class="text-fontColor">
+              <p class="text-fontColor">Este es un texto de prueba.</p>
+              
+              <footer class="blockquote-footer">Otro tipo de fuente</footer>
+            </blockquote><br><br>
+            </p>
+
+            <h3 class="mt-3 text-center text-fontColor">Etiquetas de tipografía</h3>
+
+            <p class="text-fontColor">
+              &#10024;<b>.font-weight-bold, .font-weight-normal, .font-weight-light</b>. Permite añadir grosor a
+              la fuente.<br><br>
+  
+              &#10024;<b>.font-italic Italica</b>. Añade cursiva.<br><br>
+  
+              &#10024;<b>.lead</b>. Destaca el elemento con una fuente un poco más grande.<br><br>
+  
+              &#10024;<b>.small</b>. Añade una fuente más pequeña.<br><br>
+  
+              &#10024;<b>.small</b>. Etiquetas para alinear el texto dentro de un bloque.<br><br>
+  
+              &#10024;<b>.text-lowercase, .text-uppercase, .text-capitalize</b>. Estos atributos permiten hacer
+              que el texto sea todo minúsculas, mayúsculas, o que todas las palabras empiecen por
+              mayúsculas.<br><br>
+  
+              &#10024;<b>.list-unstyled</b>. Quita el list-style y margin-left en elementos de lista ul u
+              ol.<br><br>
+  
+              &#10024;<b>.list-inline</b>. Coloca los elementos li de una lista en una línea horizontal.<br><br><br>
+            </p>
+           
+            <div>
+              <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
+              <pre>
+                <code>
+                  Esto es una prueba de &lt;mark&gt;mark&lt;/mark&gt;
+                  &lt;abbr&gt; title="Desarrollo de Aplicaciones Web"&gt;DAW&lt;/abbr&gt; es un grado superior.
+                  Esto es un &lt;code&gt;code&lt;/code&gt;
+                  Esto es &lt;kbd&gt;kbd + Y&lt;/kbd&gt;
+                  &lt;dl&gt;
+                      &lt;dt&gt;Bootstrap&lt;/dt&gt;
+                      &lt;dd&gt;- Es un FrameWork.&lt;/dd&gt;
+                  &lt;/dl&gt;
+                  &lt;h3&gt;SMALL&lt;small class="lead"&gt;Prueba small&lt;/small&gt;&lt;/h3&gt;
+                  &lt;blockquote&gt;
+                      Este es un texto de prueba.
+                      &lt;footer class="blockquote-footer"&gt;Otro tipo de fuente&lt;/footer&gt;
+                  &lt;/blockquote&gt;
+                  </code>
+                </pre>
+            </div>
+          </section>
+            </div>
+          </div>
+
+          <!--Carol-->
+          <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+            <div class="ej2">
         <section id="ej2">
           <div id="cabecera">
             <div class="jumbotron jumbotron-fluid">
               <div class="container">
                 <br />
                
-                <h2>Estudio de los colores de Bootstrap</h2><br><br>
-                <p>
+                <h2 class="mt-3 text-center text-fontColor">Estudio de los colores de Bootstrap</h2><br><br>
+                <p class="text-fontColor">
                   Bootstrap 4 tiene algunas clases contextuales que se pueden usar
                   para proporcionar "significado a través de los colores".
                 </p>
@@ -199,7 +225,7 @@
 
           <div id="clases" class="container">
             <br />
-            <h3>Clases de colores de texto:</h3>
+            <h3 class="mt-3 text-center text-fontColor">Clases de colores de texto:</h3>
             <br />
         
             <p class="text-primary">.text-primary</p>
@@ -219,7 +245,7 @@
           <div id="enlaces" class="container">
             <br>
 
-            <h3>Colores en enlaces con Bootstrap:</h3>
+            <h3 class="mt-3 text-center text-fontColor">Colores en enlaces con Bootstrap:</h3>
             <br />
             <a href="#" class="text-success">text-success</a>
             <a href="#" class="text-info">text-info</a>
@@ -233,14 +259,14 @@
           <div id="opacidad" class="container">
             <br>
             <br>
-            <h3>Opacidad para texto en blanco y negro:</h3>
+            <h3 class="mt-3 text-center text-fontColor">Opacidad para texto en blanco y negro:</h3>
             <br>
             <p class="text-black-50">Prueba de opacidad en blanco</p>
             <p class="text-white-50 bg-dark">Prueba de opacidad en negro</p>
           </div>
           <div id="fondo" class="container">
             <br />
-            <h3>Background color:</h3>
+            <h3 class="mt-3 text-center text-fontColor">Background color:</h3>
             <br>
             <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
             <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
@@ -256,7 +282,7 @@
           </div>
           <div class="codigo" class="container">
             <br />
-            <h4>Código fuente:</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente:</h4>
             
             <pre>
                         <code>
@@ -334,13 +360,15 @@
                     </pre>
           </div>
         </section>
-      </div>
+            </div>
+          </div>
 
-      <!--Leonardo. Sus imágenes no se ven bien. Supongo que tendrá que ver con los millones de links que ha puesto en su encabezado-->
-      <div class="ej3">
+          <!--Leonardo. Sus imágenes no se ven bien. Supongo que tendrá que ver con los millones de links que ha puesto en su encabezado-->
+          <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+            <div class="ej3">
         <section id="ej3">
-          <h2>Tablas e imágenes</h2>
-          <h3>table table-dark</h3>
+          <h2 class="mt-3 text-center text-fontColor">Tablas e imágenes</h2>
+          <h3 class="mt-3 text-center text-fontColor">table table-dark</h3>
           <div class="tabla-1">
             <table class="table table-dark">
               <thead>
@@ -374,7 +402,7 @@
             </table>
           </div>
 
-          <h3>table table-hover</h3>
+          <h3 class="mt-3 text-center text-fontColor">table table-hover</h3>
           <div>
             <table class="table table-hover">
               <thead>
@@ -408,10 +436,10 @@
             </table>
 
             
-            <p>-Debido al uso generalizado de tablas en widgets de terceros, como calendarios y selectores de fechas,
+            <p class="text-fontColor">-Debido al uso generalizado de tablas en widgets de terceros, como calendarios y selectores de fechas,
               hemos
               diseñado nuestras tablas para que sean opcionales.</p>
-            <p>Simplemente agregue la clase base .table a cualquier table, luego amplíe con estilos personalizados o
+            <p class="text-fontColor">Simplemente agregue la clase base .table a cualquier table, luego amplíe con estilos personalizados o
               nuestras
               diversas clases de modificadores incluidas. Usando el marcado de tabla más básico, así es como se ven las
               tablas
@@ -420,29 +448,29 @@
           </div>
 
       
-          <h3>rounded float-left</h3>
+          <h3 class="mt-3 text-center text-fontColor">rounded float-left</h3>
           <div>
             <img src="https://i.imgur.com/DRUiMyM.png" class="rounded float-left" alt="imagen1"> <!--mejor no poner la etiqueta alt si vas a poner ...-->
           </div>
 
-          <h3>rounded mx-auto d-block</h3>
+          <h3 class="mt-3 text-center text-fontColor">rounded mx-auto d-block</h3>
           <div>
             <img src="https://i.imgur.com/DRUiMyM.png" class="rounded mx-auto d-block" alt="imagen2">
           </div>
 
-          <p>Alinee las imágenes con las clases flotantes auxiliares o las clases de alineación de texto. las
+          <p class="text-fontColor">Alinee las imágenes con las clases flotantes auxiliares o las clases de alineación de texto. las
           imágenes a
           nivel de bloque se pueden centrar utilizando la clase de utilidad de margen .mx-auto.</p>
-          <h3>img-thumbnail</h3>
+          <h3 class="mt-3 text-center text-fontColor">img-thumbnail</h3>
           <div>
             <img src="https://i.imgur.com/DRUiMyM.png" alt="..." class="img-thumbnail">
           </div>
 
-          <p>Además de nuestras utilidades de radio de borde, puede usar .img-thumbnail para dar a una imagen una
+          <p class="text-fontColor">Además de nuestras utilidades de radio de borde, puede usar .img-thumbnail para dar a una imagen una
             apariencia de
             borde redondeado de 1 px.
           </p>
-          <h4>Código fuente</h4>
+          <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
           <pre><code>
                           &lt;h1&gt;table table-dark&lt;/h1&gt;
                   &lt;div&gt;
@@ -512,13 +540,15 @@
                   &lt;/div&gt;
                       </code></pre>
         </section>
-      </div>
+            </div>
+          </div>
 
-      <!--Marta-->
-      <div class="ej4">
+          <!--Marta-->
+          <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+            <div class="ej4">
         <section id="ej4">
-          <h2>Jumbotron</h2><br>
-          <p>Jumbotron es una clase que facilita la creación de bloques con un fondo diferente,
+          <h2 class="mt-3 text-center text-fontColor">Jumbotron</h2><br>
+          <p class="text-fontColor">Jumbotron es una clase que facilita la creación de bloques con un fondo diferente,
             pensados para llamar la atención y muy útiles
             para crear cabeceras o separar contenido dentro de una estructura. Se añade la etiqueta
             <code>jumbotron</code>. Si se quiere que el
@@ -529,14 +559,14 @@
             <div class="jumbotron">
               <div class="container">
                 <h1>Funcionamiento del Jumbotron</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <p class="text-fontColor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                   nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p><a class="btn btn-primary btn-lg" role="button">Leer más</a></p><br><br>
+                <p class="text-fontColor"><a class="btn btn-primary btn-lg" role="button">Leer más</a></p><br><br>
               </div>
             </div>
             <div>
-              <h4>Código fuente</h4>
+              <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
               <pre><code>
                                 &lt;div class="jumbotron"&gt;
                                 &lt;div class="container"&gt;
@@ -547,28 +577,29 @@
                                       &lt;p&gt;&lt;a&gt; class="btn btn-primary btn-lg" role="button"&gt;Leer más&lt;/a&gt;&lt;/p&gt;
                                       &lt;/div&gt;
                             </pre></code>
-            </div>            
+                  </div>            
+                </div>
+              </section>
+            </div>
           </div>
-        </section>
-      </div>
 
-      <!--David-->
-
-      <div class="ej5">
+          <!--David-->
+          <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+            <div class="ej5">
         <section id="ej5">
-          <h2>Ejemplos de Utilities y Flexbox en Bootstrap 5</h2><br><br>
-          <h3>Clases de bordes</h3><br>
+          <h2 class="mt-3 text-center text-fontColor">Ejemplos de Utilities y Flexbox en Bootstrap 5</h2><br><br>
+          <h3 class="mt-3 text-center text-fontColor">Clases de bordes</h3><br>
           <div class="ejemplo">
-            <p></p>
-            <h4>Posición</h4>
+            <p class="text-fontColor"></p>
+            <h4 class="mt-3 text-center text-fontColor">Posición</h4>
             <br>
-            <p>Las clases de borde se utilizan para diseñar el borde y el radio del borde de elementos como
+            <p class="text-fontColor">Las clases de borde se utilizan para diseñar el borde y el radio del borde de elementos como
               imágenes, botones...</p>
             <span class="border-start border-4"></span>
             <span class="border-end border-4"></span>
             <span class="border border-end-0 border-4"></span>
             <span class="border rounded border-4"></span>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   Borde izquierdo: &lt;span class="border-start border-4"> &lt;/span>
                   Borde derecho: &lt;span class="border-end border-4"> &lt;/span>
@@ -576,9 +607,9 @@
                   Cuatro bordes: &lt;span class="border rounded border-4"> &lt;/span>    
               </code></pre>
 
-            <h3>Color</h3>
+            <h3 class="mt-3 text-center text-fontColor">Color</h3>
             <br>
-            <p>Las clases de color se utilizan para cambiar el color del borde de su página web y transmitir un
+            <p class="text-fontColor">Las clases de color se utilizan para cambiar el color del borde de su página web y transmitir un
               significado específico. Son muy útiles a la hora de remarcar algo de importancia en nuestra web.</p>
             
               <span class="border border-success"></span>
@@ -586,7 +617,7 @@
             <span class="border border-warning"></span>
             <span class="border border-info"></span>
             <span class="border border-light"></span>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   Borde verde: &lt;span class="border border-success"> &lt;/span>
                   Borde rojo: &lt;span class="border border-danger"> &lt;/span>
@@ -595,9 +626,9 @@
                   Borde suave: &lt;span class="border border-light"> &lt;/span>
               </code></pre>
 
-            <h3>Clases de alineación del texto</h3>
+            <h3 class="mt-3 text-center text-fontColor">Clases de alineación del texto</h3>
             <br>
-            <p>Las clases de alineación de texto se utilizan para alinear el texto a diferentes posiciones de la
+            <p class="text-fontColor">Las clases de alineación de texto se utilizan para alinear el texto a diferentes posiciones de la
               pantalla.</p>
             <p class="text-start">Texto alineado a la izquierda en todos los tamaños.</p>
             <p class="text-center">Texto alineado en el centro en todos los tamaños.</p>
@@ -607,8 +638,8 @@
             <p class="fw-normal">Texto normal.</p>
             <p class="fw-light">Texto fino.</p>
             <p class="fw-bold">Texto ancho.</p>
-            <p><a href="#" class="text-decoration-none">Texto enlace que no muestra que es un enlace</a></p>
-            <h4>Código fuente</h4>
+            <p class="text-fontColor"><a href="#" class="text-decoration-none">Texto enlace que no muestra que es un enlace</a></p>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;p class="text-start">Texto alineado a la izquierda en todos los tamaños.&lt;/p>
                   &lt;p class="text-center">Texto alineado en el centro en todos los tamaños.&lt;/p>
@@ -621,14 +652,14 @@
                   &lt;p>&lt;a href="#" class="text-decoration-none">Texto enlace que no muestra que es un enlace&lt;/a>&lt;/p>
               </code></pre>
 
-            <h3>Clases de fondos</h3>
+            <h3 class="mt-3 text-center text-fontColor">Clases de fondos</h3>
             <br>
-            <p>Las clases de fondos se utilizan para aplicar color al fondo del elemento. Tienen gran utilidad a
+            <p class="text-fontColor">Las clases de fondos se utilizan para aplicar color al fondo del elemento. Tienen gran utilidad a
               la hora de notificar si el envío ha sido correcto o ha surgido un error.</p>
             <div class="p-3 mb-2 bg-secondary text-white">Cargando...</div>
             <div class="p-3 mb-2 bg-success text-white">Carga completa</div>
             <div class="p-3 mb-2 bg-danger text-white">ERROR</div>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;div class="p-3 mb-2 bg-secondary text-white">Cargando...&lt;/div>
                   &lt;div class="p-3 mb-2 bg-success text-white">Carga completa&lt;/div>
@@ -642,24 +673,24 @@
           <br>
           <br>
 
-          <h2>Flexbox</h2>
+          <h2 class="mt-3 text-center text-fontColor">Flexbox</h2>
           <div class="ejemplo">
-            <p>Flexbox, es una de las grandes diferencias entre Bootstrap 5 y Bootstrap 4, ya que este no incluía
+            <p class="text-fontColor">Flexbox, es una de las grandes diferencias entre Bootstrap 5 y Bootstrap 4, ya que este no incluía
               esta característica.
               Con flexbox, puedes administrar rápidamente el diseño, la alineación y el tamaño de la cuadrícula.
               Facilitan la creación de menús.
             </p>
             <br>
-            <h3>Flexbox horizontal</h3>
-            <p>Simple</p>
+            <h3 class="mt-3 text-center text-fontColor">Flexbox horizontal</h3>
+            <p class="text-fontColor">Simple</p>
             <div class="d-flex p-2" id="ejemploFlex">Contenedor horizontal</div>
             <br>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;div class="d-flex p-2" id="ejemploFlex">Contenedor horizontal&lt;/div>
               </code></pre>
 
-            <p>Flexible</p>
+            <p class="text-fontColor">Flexible</p>
             <div class="d-flex flex-row" id="ejemploFlex">
               <!-- id  para darle formato en el CSS-->
               <div class="p-2">Elemento 1</div>
@@ -667,7 +698,7 @@
               <div class="p-2">Elemento 3</div>
             </div>
             <br>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;div class="d-flex flex-row" id="ejemploFlex"> <!-- id  para darle formato en el CSS-->
                       &lt;div class="p-2">Elemento 1&lt;/div>
@@ -677,26 +708,26 @@
               </code></pre>
 
 
-            <p>Alineado de elementos</p>
+            <p class="text-fontColor">Alineado de elementos</p>
             <div class="d-flex align-items-end" id="ejemploFlex">Elemento 1</div>
             <div class="d-flex align-items-center" id="ejemploFlex">Elemento 2</div>
             <div class="d-flex align-items-baseline" id="ejemploFlex">Elemento 3</div>
             <br>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;div class="d-flex align-items-end" id="ejemploFlex">Elemento 1&lt;/div>
                   &lt;div class="d-flex align-items-center" id="ejemploFlex">Elemento 2&lt;/div>
                   &lt;div class="d-flex align-items-baseline" id="ejemploFlex">Elemento 3&lt;/div>
               </code></pre>
 
-            <p>Márgenes automáticos</p>
+            <p class="text-fontColor">Márgenes automáticos</p>
             <div class="d-flex" id="ejemploFlex">
               <div class="mr-auto p-2">Elemento 1</div>
               <div class="mr-auto p-2">Elemento 2</div>
               <div class="mr-auto p-2">Elemento 3</div>
             </div>
             <br>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;div class="d-flex" id="ejemploFlex">
                       &lt;div class="mr-auto p-2">Elemento 1&lt;/div>
@@ -705,14 +736,14 @@
                   &lt;/div>
               </code></pre>
 
-            <h4>Flexbox vertical</h4>
+            <h4 class="mt-3 text-center text-fontColor">Flexbox vertical</h4>
             <div class="d-flex flex-column" id="ejemploFlex">
               <div class="p-2">Elemento 1</div>
               <div class="p-2">Elemento 2</div>
               <div class="p-2">Elemento 3</div>
             </div>
             <br>
-            <h4>Código fuente</h4>
+            <h4 class="mt-3 text-center text-fontColor">Código fuente</h4>
             <pre><code>
                   &lt;div class="d-flex flex-column" id="ejemploFlex">
                       &lt;div class="p-2">Elemento 1&lt;/div>
@@ -722,8 +753,13 @@
               </code></pre>
           </div>
         </section>
+            </div>
+          </div>
+
+          <!--</div>-->
+
+        </div>
       </div>
-</div>
     </main>
   
   <footer>
@@ -746,6 +782,7 @@
     </div>
   </footer>
   <script src="./JS/scripts.js"></script>
+</div>
 </body>
 
 </html>
