@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="./CSS/estilos.css" />
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Favicon  -->
-    <link rel="icon" href="images/icons8-oreja.svg" type="faviconimage/x-icon">
     <title>Bootstrap</title>
 </head>
+
 <body>
     <header>
         <h1>Cabecera principal del Grupa A 1</h1>
@@ -26,12 +26,16 @@
             <a href="./index.html"></a>
             <div class="dropdown">
                 <button class="dropbtn" onclick="myFunction()"> grupoA2
-                <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="myDropdown">
                     <a href="#ej1">Ejercicio 1</a>
                     <a href="#ej2">Ejercicio 2</a>
                     <a href="#ej3">Ejercicio 3</a>
+                    <a href="#ej4">Ejercicio 4</a>
+                    <a href="#ej5">Ejercicio 5</a>
+                    <a href="#ej6">Ejercicio 6</a>
+                    <a href="#ej7">Ejercicio 7</a>
                 </div>
             </div>
             <a href="grupoA3.html">GrupoA3</a>
@@ -41,26 +45,1163 @@
     </nav>
     <div class="main">
         <main>
-            <div class="ej1">            
+            <div class="ej1">
                 <section id="ej1">
                     <!-- Nombre esta es tu area de trabajo -->
-                    <h2>Titulo de parte de alumno 1</h2><br><br>
-                    <p>Parrafo para el alumno 1 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>PAGINACIÓN</h2><br><br>
+                    <p>Para crear una paginación básica, hay que agregar la clase pagination a un elemento "ul".<br>
+                        Luego agregar la clase page-item a cada elemento "li" y una clase page-link a cada enlace "a"
+                        dentro de "li".<br>
+                        La clase active se utiliza para "resaltar" la página actual.<br>
+                        La clase disabled se utiliza para enlaces en los que no se puede hacer click.<br>
+                        La clase pagination-lg sirve para hacer los bloques más grandes y pagination-sm para hacerlos
+                        más pequeños.<br>
+                        también podemos alinear los bloques en la izquierda, centro o derecha con:<br>
+                        class="pagination" para ponerlo a la izquierda, class="pagination justify-content-center" para
+                        centrar la paginación, y class="pagination justify-content-end" para situarlo a la derecha.<br>
+                        Otra forma de paginación son las migas de pan: Las clases breadcrumb y breadcrumb-item indican
+                        la ubicación de la página actual dentro de una jerarquía de navegación.
+                    </p><br>
+                    <div class="alumno1container">
+                        <p>Ejemplo de paginación situada en la izquierda con active en el 1 y disabled en el
+                            previous.</p>
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+
+                        <code>
+                            &lt;p&gt;Ejemplo de paginación situada en la izquierda con active en el 1 y disabled en el
+                            previous.&lt;/p&gt;<br>
+                            &lt;ul class="pagination"&gt;<br>
+                                &lt;li class="page-item disabled"&gt; &lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;<br>
+                                &lt;li class="page-item active"&gt; &lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;<br>
+                                &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;<br>
+                                &lt;li class="page-item"&gt; &lt;a class="page-link" href="#" &gt;3&lt;/a&gt;&lt;/li&gt;<br>
+                                &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+
+
+                        <ul>
+                            <li class="pagination justify-content-center">Ejemplo de paginación situada en el centro con
+                                tamaño aumentado y flechas en lugar de previo y siguiente(& y laquo; para la izquierda y
+                                & y raquo; para la derecha).
+                            </li>
+                            <ul class="pagination pagination-lg pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                            </ul>
+                        </ul>
+                        <code class="pagination justify-content-center">
+                            &lt;ul&gt;<br>
+                                &lt;li class="pagination justify-content-center">Ejemplo de paginación situada en el centro con tamaño aumentado y flechas en lugar de previo y siguiente(& y laquo; para la izquierda y  & y raquo; para la derecha).
+                                &lt;/li&gt;<br>
+                                &lt;ul class="pagination pagination-lg pagination justify-content-center"&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;&laquo; &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;1 &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;2 &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;3 &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;&raquo; &lt;/a&gt; &lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+
+                        <ul>
+                            <li class="pagination justify-content-end">Ejemplo de paginación situada a la derecha con
+                                con tamaño
+                                disminuido.</li>
+                            <ul class="pagination pagination-sm pagination justify-content-end">
+                                <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                            </ul>
+                        </ul>
+                        <code class="pagination justify-content-end">
+                            &lt;ul&gt;<br>
+                                &lt;li class="pagination justify-content-end"&gt;Ejemplo de paginación situada a la derecha con con tamaño
+                                disminuido. &lt;/li&gt;<br>
+                                &lt;ul class="pagination pagination-sm pagination justify-content-end"&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;Previo &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;1 &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;2 &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;3 &lt;/a&gt; &lt;/li&gt;<br>
+                                    &lt;li class="page-item"&gt; &lt;a class="page-link" href="#"&gt;Siguiente &lt;/a&gt; &lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                            &lt;/ul&gt;<br>
+                        </code>
+
+                        <p>Ejemplo migas de pan con active en Budapest</p>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Fotos</a></li>
+                            <li class="breadcrumb-item"><a href="#">2019</a></li>
+                            <li class="breadcrumb-item"><a href="#">Hungría</a></li>
+                            <li class="breadcrumb-item active">Budapest</li>
+                        </ul>
+                        <code>
+                            &lt;p&gt;Ejemplo migas de pan con active en Budapest &lt;/p&gt;<br>
+                            &lt;ul class="breadcrumb"&gt;<br>
+                                &lt;li class="breadcrumb-item"&gt; &lt;a href="#"&gt;Fotos &lt;/a&gt; &lt;/li&gt;<br>
+                                &lt;li class="breadcrumb-item"&gt; &lt;a href="#"&gt;2019 &lt;/a&gt; &lt;/li&gt;<br>
+                                &lt;li class="breadcrumb-item"&gt; &lt;a href="#"&gt;Hungría &lt;/a&gt; &lt;/li&gt;<br>
+                                &lt;li class="breadcrumb-item active"&gt;Budapest &lt;/li&gt;<br>
+                            &lt;/ul&gt; 
+                        </code>
+
+
+
+                    </div>
                 </section>
             </div>
-            <div class="ej2">            
+            <div class="ej2">
                 <section id="ej2">
-                    <h2>Titulo de parte de alumno 2</h2><br><br>
-                    <p>Parrafo para el alumno 2 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>GRUPOS DE LISTAS</h2><br><br>
+                    <p>
+                        Los grupos de listas son un componente flexible y potente para mostrar una serie de contenidos.
+                        En la etiqueta ul le tendremos que agregar .list-group.
+                    </p><br>
+                    <div class="alumno1container">
+                        <ul>
+                            <!--justify-content-center-->
+                            <li>Ejemplo básico: una lista desordenada con elementos de lista. para cade etiqueta li le
+                                agregamos .list-group-item <br>EJEMPLO: <br>
+                                <div class="container">
+                                    <div class="row align-items-start">
+
+                                        <div class="col">
+                                            <ul class="list-group" style="width: 18rem;">
+                                                <li class="list-group-item">Trabajo de Bootstrap</li>
+                                                <li class="list-group-item">Trabajo de JQuery</li>
+                                                <li class="list-group-item">Trabajo de CSS</li>
+                                                <li class="list-group-item">Trabajo de HTML</li>
+                                                <li class="list-group-item">Trabajo responsive</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <code>
+                                                &lt;ul class="list-group" style="width: 18rem;"&gt;<br>
+                                                &nbsp;&lt;li class="list-group-item"&gt;Trabajo de Bootstrap&lt;/li&gt;<br>
+                                                &nbsp;&lt;li class="list-group-item"&gt;Trabajo de JQuery&lt;/li&gt;<br>
+                                                &nbsp;&lt;li class="list-group-item"&gt;Trabajo de CSS&lt;/li&gt;<br>
+                                                &nbsp;&lt;li class="list-group-item"&gt;Trabajo de HTML&lt;/li&gt;<br>
+                                                &nbsp;&lt;li class="list-group-item"&gt;Trabajo responsive&lt;/li&gt;<br>
+                                                &lt;/ul&gt;
+                                            </code>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>Elementos activos: Añadiendo .active a .list-group-item, indicaremos la sección
+                                activa.<br>EJEMPLO: <br>
+                                <ul class="list-group" style="width: 18rem;">
+                                    <li class="list-group-item active">Trabajo de Bootstrap</li>
+                                    <li class="list-group-item">Trabajo de JQuery</li>
+                                    <li class="list-group-item">Trabajo de CSS</li>
+                                    <li class="list-group-item">Trabajo de HTML</li>
+                                    <li class="list-group-item">Trabajo responsive</li>
+                                </ul>
+                                <code>
+                                    &lt;li class="list-group-item active" &gt;Trabajo de Bootstrap &lt;/li &gt;
+                                  </code>
+                            </li>
+                            <li>Podemos agregar colores añadiendo a .list-group-item otra clase .list-group-item-*, en
+                                el * pones el color (primary, secondary, success, danger, warning, info, light,
+                                dark).<br>EJEMPLO: <br>
+                                <ul class="list-group" style="width: 18rem;">
+                                    <li class="list-group-item list-group-item-primary">Trabajo de Bootstrap</li>
+                                    <li class="list-group-item list-group-item-success">Trabajo de JQuery</li>
+                                    <li class="list-group-item list-group-item-warning">Trabajo de CSS</li>
+                                    <li class="list-group-item list-group-item-info">Trabajo de HTML</li>
+                                    <li class="list-group-item list-group-item-light">Trabajo responsive</li>
+                                </ul>
+
+                                <code>
+                                    &nbsp; &lt;li class="list-group-item list-group-item-primary"&gt;Trabajo de Bootstrap&lt;/li&gt;<br>
+                                  </code>
+                            </li>
+                            <li>También podemos agregar botones(le añadimos list-group-item-action a la etiqueta
+                                button), enlaces (le añadimos list-group-item-action a la etiqueta a).
+                                <div class="list-group" style="width: 18rem;">
+                                    <button type="button"
+                                        class="list-group-item list-group-item-action btn btn-primary">Trabajo de
+                                        Bootstrap</button>
+                                    <button type="button"
+                                        class="list-group-item list-group-item-action btn btn-primary">Trabajo de
+                                        JQuery</button>
+                                    <button type="button"
+                                        class="list-group-item list-group-item-action btn btn-primary">Trabajo de
+                                        CSS</button>
+                                    <button type="button"
+                                        class="list-group-item list-group-item-action btn btn-primary">Trabajo de
+                                        Bootstrap</button>
+                                    <button type="button"
+                                        class="list-group-item list-group-item-action btn btn-primary">Trabajo
+                                        responsive</button>
+                                </div>
+                            </li>
+                            <code>
+                                &lt;button type="button" class="list-group-item list-group-item-action btn btn-primary" &gt;Trabajo de Bootstrap &lt;/button&gt;<br>
+                                &lt;button type="button" class="list-group-item list-group-item-action btn btn-primary"&gt;Trabajo de Bootstrap &lt;/button&gt;
+                            </code>
+
+                        </ul>
+                    </div>
                 </section>
             </div>
-            <div class="ej3">            
+            <div class="ej3">
                 <section id="ej3">
-                    <h2>Titulo de parte de alumno 3</h2><br><br>
-                    <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>CARDS</h2><br><br>
+                    <p> Una card (tarjeta) es un contenedor de contenido flexible y extensible. Incluye opciones para
+                        encabezados y pies de página, una amplia variedad de contenido,
+                        colores de fondo contextuales y potentes opciones de visualización. Nos permite dar un estilo y
+                        una estructura a nuestro contenedor, se construyen con
+                        la menor cantidad de marcas y estilos posible, pero aun así logran ofrecer una tonelada de
+                        control y personalización. Para comenzar a utilizar la propiedad card de bootstrap,
+                        comenzamos con un div general con class="card". Y dentro ya podemos aplicar estilos con
+                        distintas clases de card.
+                    </p><br>
+                    <div class="alumno1container">
+                        <ul>
+                            <li>card-header ,card-body, card-footer: nos indica que parte de la card es, cabezera,
+                                cuerpo o pie de página. </li>
+                            <li>Títulos (se usan al agregarlos .card-title a una etiqueta h ), texto (.card-subtitle a
+                                una etiqueta h para agregar un subtítulo, y .card-title para agregar un título) y
+                                enlaces (agregar .card-link a una etiqueta <a>)
+                                    <br> EJEMPLO:
+
+
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Este es el título</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Este es un subtítulo</h6>
+                                            <p class="card-text">Un texto de ejemplo rápido para construir sobre el
+                                                título de la tarjeta y componer la mayor parte del contenido de la
+                                                tarjeta.</p>
+                                            <a href="#" class="card-link">Un link</a>
+                                            <a href="#" class="card-link">Otro link</a>
+                                        </div>
+                                    </div>
+                                    <code>
+                                    &lt;div class="card" style="width: 18rem;"&gt;<br>
+                                    &nbsp; &lt;div class="card-body"&gt;<br>
+                                    &nbsp; &nbsp; &lt;h5 class="card-title"&gt;Este es el título &lt;/h5&gt;<br>
+                                    &nbsp; &nbsp; &lt;h6 class="card-subtitle mb-2 text-muted"&gt;Este es un subtítulo &lt;/h6&gt;<br>
+                                    &nbsp; &nbsp; &lt;p class="card-text"&gt;Un texto de ejemplo rápido para construir sobre el título de la tarjeta y componer la mayor parte del contenido de la tarjeta.&lt;/p&gt;<br>
+                                    &nbsp; &nbsp; &lt;a href="#" class="card-link"&gt;Un link &lt;/a&gt;<br>
+                                    &nbsp; &nbsp; &lt;a href="#" class="card-link"&gt;Otro link &lt;/a&gt;<br>
+                                    &nbsp; &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </li>
+                            <li>Imágenes con .card-img-top en la etiqueta img coloca una imagen en la parte superior de
+                                la tarjeta, o con card-img-bottom lo coloca en la parte inferior. <br>
+                                Botones: agregando .btn btn-primary a una etiqueta a podemos crear un estilo de un
+                                botón.
+
+
+                            </li>
+                            <li>Podemos agregar colores añadiendo a .list-group-item otra clase .list-group-item-*, en
+                                el * pones el color (primary, secondary, success, danger, warning, info, light, dark).
+                                <br> EJEMPLO:
+
+                                <div class="container">
+                                    <div class="row align-items-start">
+                                        <div class="col">
+                                            <div class="card" style="width: 18rem;">
+                                                <img class="card-img-top"
+                                                    src="https://cdn-0.citas.in/media/authors/aleksandr-solzhenitsyn.jpeg"
+                                                    alt="Jóse el fontanero">
+                                                <div class="card-body">
+                                                    <h5 class="card-title bg-primary">Jóse</h5>
+                                                    <p class="card-text  bg-danger">Soy Jóse, fontanero con 5 años de
+                                                        experiencia</p>
+                                                    <a href="#" class="btn btn-primary">Contratar</a>
+                                                </div>
+                                            </div><br>
+                                        </div>
+                                        <div class="col">
+                                            <code>
+                                                &lt;div class="card" style="width: 18rem;"&gt;<br>
+                                                &nbsp;&lt;img class="card-img-top" src="https://cdn-0.citas.in/media/authors/aleksandr-solzhenitsyn.jpeg" alt="Jóse el fontanero"&gt;<br>
+                                                &lt;div class="card-body"&gt;<br>
+                                                &nbsp; &nbsp; &lt;h5 class="card-title bg-primary"&gt;Jóse&lt;/h5&gt;<br>
+                                                &nbsp; &nbsp; &lt;p class="card-text  bg-danger"&gt;Soy Jóse, fontanero con 5 años de experiencia&lt;/p&gt;<br>
+                                                &nbsp; &nbsp; &lt;a href="#" class="btn btn-primary"&gt;Contratar&lt;/a&gt;<br>
+                                                &lt;/div&gt;<br>
+                                                &lt;/div&gt;<br>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li> Un ejemplo aplicando todo junto:
+                                <br> EJEMPLO:
+
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top"
+                                                src="https://cdn-0.citas.in/media/authors/aleksandr-solzhenitsyn.jpeg"
+                                                alt="Jóse el fontanero">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Jóse</h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">50 años</h6>
+                                                <p class="card-text">Soy Jóse, fontanero con 5 años de experiencia. Mis
+                                                    habilidades:</p>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item list-group-item-primary">Manejo de
+                                                        herramientas</li>
+                                                    <li class="list-group-item list-group-item-success">Solución de
+                                                        problemas</li>
+                                                    <li class="list-group-item list-group-item-warning">Trabajo en
+                                                        equipo</li>
+                                                </ul>
+                                                <a href="#" class="card-link">Mi curiculim</a><br>
+                                                <a href="#" class="btn btn-primary">Contratar</a>
+                                            </div>
+                                        </div><br>
+                                    </div>
+                                    <div class="col">
+                                        <code>
+                                            &lt;div class="card" style="width: 18rem;"&gt;<br>
+                                           &nbsp; &lt;img class="card-img-top" src="https://cdn-0.citas.in/media/authors/aleksandr-solzhenitsyn.jpeg" alt="Jóse el fontanero"&gt;<br>
+                                           &nbsp;&lt;div class="card-body"&gt;<br>
+                                           &nbsp;&nbsp;&lt;h5 class="card-title"&gt;Jóse&lt;/h5&gt;<br>
+                                           &nbsp;&nbsp;&lt;h6 class="card-subtitle mb-2 text-muted"&gt;50 años&lt;/h6&gt;<br>
+                                           &nbsp;&nbsp;&lt;p class="card-text"&gt;Soy Jóse, fontanero con 5 años de experiencia. Mis habilidades:&lt;/p&gt;<br>
+                                           &nbsp;&nbsp;&lt;ul class="list-group list-group-flush"&gt;<br>
+                                           &nbsp;&nbsp; &lt;li class="list-group-item list-group-item-primary"&gt;Manejo de herramientas&lt;/li&gt;<br>
+                                           &nbsp;&nbsp;&lt;li class="list-group-item list-group-item-success"&gt;Solución de problemas&lt;/li&gt;<br>
+                                           &nbsp;&nbsp;&lt;li class="list-group-item list-group-item-warning"&gt;Trabajo en equipo&lt;/li&gt;<br>
+                                           &nbsp;&nbsp; &lt;/ul><br>
+                                           &nbsp; &nbsp;&lt;a href="#" class="card-link">Mi curiculim&lt;/a&gt;<br>
+                                           &nbsp;&nbsp; &lt;a href="#" class="btn btn-primary">Contratar&lt;/a&gt;<br>
+                                           &nbsp;&lt;/div&gt;<br>
+                                             &lt;/div&gt;<br>
+                                        </code>
+                                    </div>
+                                </div>
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="ej5">
+                <section id="ej4">
+                    <h2>DROPDOWNS</h2><br><br>
+                    <p>Los dropdowns son menús desplegables que permiten al usuario, tras pulsar un botón con un
+                        nombre que abarca unas opciones relativas al mismo, elegir un valor de una lista
+                        predefinida.
+                    </p><br>
+                    <div class="alumno1container">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle"  data-bs-toggle="dropdown">
+                                Funcionalidades </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-header"> href="#">Grupos de trabajo</a></li>
+                                <li><a class="dropdown-item" href="#">Grupo A1</a></li>
+                                <li><a class="dropdown-item" href="#">Grupo A2</a></li>
+                                <li><a class="dropdown-item" href="#">Grupo A3</a></li>
+                                <li><a class="dropdown-item" href="#">Grupo B1</a></li>
+                                <li><a class="dropdown-item" href="#">Grupo B2</a></li>
+                                <li><hr class="dropdown-divider"></hr></li>
+                                <li><a class="dropdown-header"> href="#">Funcionalidades grupo A2</a></li>
+                                <li><a class="dropdown-item disabled" href="#">Paginación</a></li>
+                                <li><a class="dropdown-item active" href="#">Grupos de listas</a></li>
+                                <li><a class="dropdown-item" href="#">Cards</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdowns</a></li>
+                                <li><a class="dropdown-item" href="#">Collapse</a></li>
+                                <li><a class="dropdown-item" href="#">Navs</a></li>
+                                <li><a class="dropdown-item" href="#">Nav Bars</a></li>
+                            </ul>
+                        </div>
+                    </div><br>
+                    <code class="dropdown_F">
+                        &lt;h2&gt;DROPDOWNS&lt;/h2&gt;<br><br>
+                        &lt;p&gt;Los dropdowns son menús desplegables que permiten al usuario, tras pulsar un botón con un
+                            nombre que abarca unas opciones relativas al mismo, elegir un valor de una lista
+                            predefinida.
+                            &lt;/p&gt;<br>
+                            &lt;div class="dropdown_F"&gt;<br>
+                            &lt;div class="dropdown"&gt;<br>
+                            &lt;button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"&gt;<br>
+                                    Funcionalidades &lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;<br>
+                                    &lt;ul class="dropdown-menu"&gt;<br>
+                                    &lt;li class="dropdown-header"&gt;Grupos de trabajo&lt;/li&gt;<br>
+                                    &lt;li class="disabled"&gt;&lt;a href="#"&gt;Grupo A1&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Grupo A2&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li class="disabled"&gt;&lt;a href="#"&gt;Grupo A3&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li class="disabled"&gt;&lt;a href="#"&gt;Grupo B1&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li class="disabled"&gt;&lt;a href="#"&gt;Grupo B2&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li class="divider"&gt;&lt;/li&gt;<br>
+                                    &lt;li class="dropdown-header"&gt;Funcionalidades grupo A2&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Paginación&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Grupos de listas&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Cards&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Dropdowns&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Collapse&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Navs&lt;/a&gt;&lt;/li&gt;<br>
+                                    &lt;li&gt;&lt;a href="#"&gt;Nav Bars&lt;/a&gt;&lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    </code>
+                </section>
+            </div>
+            <div class="ej5">
+                <section id="ej5">
+                    <h2>COLLAPSE</h2><br><br>
+                    <p>Aprenderás sobre el uso de Collapse pulsando en el siguiente botón:</p><br>
+                    <div class="collapse_F">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#texto">
+                            Uso de Collapse</button><br><br>
+                        <div id="texto" class="collapse">
+                            Los Collapse son herramientas útiles para ocultar y mostrar una gran cantidad del
+                            contenido de una página.
+                        </div>
+                    </div>
+                    <code class="collapse_F">
+                        &lt;h2&gt;COLLAPSE&lt;/h2&gt;<br><br>
+                        &lt;p&gt;Aprenderás sobre el uso de Collapse pulsando en el siguiente botón:&lt;/p&gt;<br>
+                        &lt;div class="collapse_F"&gt;<br>
+                        &lt;button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#texto"&gt;<br>
+                                Uso de Collapse&lt;/button&gt;<br><br>
+                            &lt;div id="texto" class="collapse"&gt;<br>
+                                Los Collapse son herramientas útiles para ocultar y mostrar una gran cantidad del
+                                contenido de una página.
+                            &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    </code>
+
+                </section>
+            </div>
+            <div class="ej6">
+                <section id="ej6">
+                    <h2>NAVS</h2><br><br>
+                    <p> La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base nav hasta los estados activo y deshabilitado.
+                      El componente base nav está construido con flexbox y proporciona una base sólida para construir todo tipo de componentes de navegación.
+                      Incluye algunas anulaciones de estilo (para trabajar con listas), algo de relleno de enlaces para áreas de acceso más grandes y estilo básico deshabilitado.</p><br>
+                    <div class="alumno1container">
+                      <!-- primer grupo de ejemplos de nav -->
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <h3>NAV (Navegación Horizontal)</h3>
+                          
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled">Desabilitado</a>
+                            </li>
+                          </ul>
+                          <p>
+                            Si desea crear un menú horizontal simple, agregue la clase nav  a un elemento ul, seguido de la clase nav-item para cada uno de los elementos li y agregue la clase nav-link a sus enlaces:
+                          </p>
+                          <code>
+                            &lt;ul class="nav"&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Activo&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link disabled"&gt;Desabilitado&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                          </code>
+                        </div>
+
+                        <div class="col">
+                          <h3>NAV (Navegación Alineada)</h3>
+                          <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled">Desabilitado</a>
+                            </li>
+                          </ul>
+                          <p>
+                            Para este ejemplo se ha agregado la clase justify-content-center para centrar la navegación. Y si quisieramos alinearla a la derecha usariamos la clase justify-content-end.
+                          </p>
+
+                          <code>
+                            &lt;ul class="nav justify-content-center"&gt;<br>
+                            &nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                            &nbsp;&nbsp;&nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Activo&lt;/a&gt;<br>
+                            &nbsp;&nbsp; &lt;/li&gt;<br>
+                            &nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                            &nbsp;&nbsp;&nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                            &nbsp;&nbsp; &lt;/li&gt;<br>
+                            &nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                            &nbsp;&nbsp;&nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                            &nbsp;&nbsp; &lt;/li&gt;<br>
+                            &nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                            &nbsp;&nbsp;&nbsp; &lt;a class="nav-link disabled"&gt;Desabilitado&lt;/a&gt;<br>
+                            &nbsp;&nbsp; &lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                          </code>
+                        </div>
+                      </div><br>
+                    </div>
+                    <!-- Segundo grupo de ejemplos de nav -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <h3>NAV (Navegación Vertical)</h3>
+                        
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Enlace 1</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Enlace 2</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled">Desabilitado</a>
+                          </li>
+                        </ul>
+                        <p>
+                          Para apilar tu navegación y darle un aspecto vertical lo logramos cambiando la dirección del elemento flexible con la utilidad de la clase flex-column.
+                        </p>
+                        <code>
+                          &lt;ul class="nav flex-column"&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Activo&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link disabled"&gt;Desabilitado&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &lt;/ul&gt;
+                        </code>
+                      </div>
+
+                      <div class="col">
+                        <h3>TABS (Navegación Pestañas)</h3>
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Enlace 1</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Enlace 2</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled">Desabilitado</a>
+                          </li>
+                        </ul>
+                        <p>
+                          En este apartado podremos observar como podriamos convertir el menú de navegación en pestañas de navegación con la clase nav-tabs. Agregue la clase active al enlace activo/actual. Si desea que las pestañas se puedan alternar, vea el último ejemplo en esta página.
+                        </p>
+
+                        <code>
+                          &lt;ul class="nav nav-tabs"&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Activo&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &nbsp;&lt;li class="nav-item"&gt;<br>
+                          &nbsp; &lt;a class="nav-link disabled"&gt;Desabilitado&lt;/a&gt;<br>
+                          &nbsp;&lt;/li&gt;<br>
+                          &lt;/ul&gt;
+                        </code
+                        >
+                      </div>
+                    </div>
+                  </div><br>
+                  <!-- Tercer grupo ejercicios nav pills  -->
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <h3>PILLS (Navegación Pastillas)</h3>
+                          
+                          <ul class="nav nav-pills">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled">Desabilitado</a>
+                            </li>
+                          </ul>
+                          <p>
+                            Para convertir nuestro menú de navegación NAV a un PILLS vamos a hacer uso de una nueva clase la cual colocaremos en el elemento ul esta clase es la nav-pills .
+                          </p>
+                          <code>
+                            &lt;ul class="nav nav-pills"&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Activo&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link disabled"&gt;Desabilitado&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                          </code>
+                        </div>
+
+                        <div class="col">
+                          <h3>PILLS (Navegación Pastillas Justificadas)</h3>
+                          <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled">Desabilitado</a>
+                            </li>
+                          </ul>
+                          <p>
+                            Para poder justificar las navegacion tipo pastillas, forzamos el contenido para que se pueda extender en el ancho total disponible usando la clase nav-fill la cual se encargara de llenar proporcionalmente el espacio disponible.
+                          </p>
+
+                          <code>
+                            &lt;ul class="nav nav-pills nav-fill"&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Activo&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &nbsp;&lt;li class="nav-item"&gt;<br>
+                            &nbsp; &lt;a class="nav-link disabled"&gt;Desabilitado&lt;/a&gt;<br>
+                            &nbsp;&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                          </code
+                          >
+                        </div>
+                      </div>
+                    </div><br>
+                    <!-- cuarto grupo ejercicios nav   -->
+                    <div class="container">
+                      <h3 class="text-center">TABS (Alternables/Dinámicas</h3>
+                      <p>En este ejemplo podemos ver el uso de navegacion tipo Tabs en la cual veremos las pestañas dinamicas </p>
+                      <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Enlace 1</button>
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Enlace 2</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Aqui podemos poner la información que queramos relacionada al Home.</div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Aqui la información relacionadas a la pestaña Enlace 1</div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Y en este ultimo podemos colocar información relacionada con la pestaña Enlace 2</div>
+                      </div><br>
+
+                      <!-- Ejemplo de codigo -->
+                      <code>
+                        &lt;nav&gt;<br>
+                        &nbsp;&lt;div class="nav nav-tabs" id="nav-tab" role="tablist"&gt;<br>
+                        &nbsp; &lt;button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"&gt;Home&lt;/button&gt;<br>
+                        &nbsp; &lt;button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"&gt;Enlace 1&lt;/button&gt;<br>
+                        &nbsp; &lt;button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"&gt;Enlace 2&lt;/button&gt;<br>
+                        &nbsp; &lt;/div&gt;<br>
+                        &lt;/nav&gt;<br>
+                        &lt;div class="tab-content" id="nav-tabContent"&gt;<br>
+                        &nbsp; &lt;div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"&gt;Aqui podemos poner la información que queramos relacionada al Home.&lt;/div&gt;<br>
+                        &nbsp; &lt;div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"&gt;Aqui la información relacionadas a la pestaña Enlace 1&lt;/div&gt;<br>
+                        &nbsp; &lt;div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"&gt;Y en este ultimo podemos colocar información relacionada con la pestaña Enlace 2&lt;/div&gt;<br>
+                        &lt;/div&gt;
+                      </code>
+                    </div>
+                      
+                    </div>
+                </section>
+            </div>
+            <div class="ej7">
+                <section id="ej7">
+                    <h2>NAV BARS</h2><br><br>
+                    <p> Una barra de navegación es un encabezado de navegación que se coloca en la parte superior de la página. Con Bootstrap, una barra de navegación puede extenderse o contraerse, según el tamaño de la pantalla.</p>
+                    <p>Esto es lo que necesita saber antes de comenzar con la barra de navegación:</p>
+                    <ul>
+                        <li>
+                          Las barras de navegación requieren un envoltorio para las
+                          clases.
+                        </li>
+                        <li>
+                          Las barras de navegación y su contenido son fluidos de forma
+                          predeterminada. Cambie el contenedor para limitar su ancho
+                          horizontal de diferentes maneras.
+                        </li>
+                        <li>
+                          Las barras de navegación responden de manera predeterminada,
+                          pero puede modificarlas fácilmente para cambiar eso.
+                        </li>
+                      </ul><br>
+                    <div class="alumno1container">
+                        <!-- primer grupo de ejemplos -->
+                        <div class="container">
+                            <div class="row">
+                              <div class="col">
+                                <h3>NAVBAR con Logo (Texto) </h3>
+                                <!-- As a link -->
+                                <nav class="navbar navbar-dark bg-primary">
+                                  <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">LOGO</a>
+                                  </div>
+                                </nav>
+                                <p> En este ejemplo el navbar-brand puede aplicar a la mayoría de los elementos, pero un ancla funciona mejor, ya que algunos elementos pueden requerir clases de utilidad o estilos personalizados.
+                    
+                                  Podemos agregar su texto o logo dentro de un elemento con la clase navbar-brand .</p>
+                                <code>
+                                  &lt;nav class="navbar navbar-dark bg-primary"&gt;<br>
+                                  &nbsp;&nbsp; &lt;div class="container-fluid"&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="navbar-brand" href="#"&gt;TEXTO o LOGO&lt;/a&gt;<br>
+                                  &nbsp;&nbsp;&lt;/div&gt;<br>
+                                &lt;/nav&gt;
+                              </code>
+                              </div>
+                    
+                              <div class="col">
+                                <h3>NAVBAR con Logo (Texto e Imagen)</h3>
+                                <nav class="navbar navbar-light" style="background-color: #a7cbe6;">
+                                  <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">
+                                      <img src="/PROYECTO-BOOTSTRAP/MyProject.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                      LOGO
+                                    </a>
+                                  </div>
+                                </nav>
+                                <p>En este siguiente ejemplo podemos ver que podriamos utilizar imagen y texto para la barra de navegación, esto se puede hacer con el uso de algunas utilidades adicionales para mostrarlas al mismo tiempo. Tenga en cuenta la adición de .d-inline-blocky .align-text-top en el img</p>
+                    
+                                <code>
+                                  &lt;nav class="navbar navbar-light bg-dark"&gt;<br>
+                                  &nbsp;&nbsp; &lt;div class="container-fluid"&gt;<br>
+                                  &nbsp;&nbsp;&nbsp; &lt;a class="navbar-brand" href="#"&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="" alt="" class="d-inline-block align-text-top"&gt;
+                                      Logo 
+                                  &nbsp;&nbsp;&nbsp; &lt;/a&gt;<br>
+                                  &nbsp;&nbsp; &lt;/div&gt;<br>
+                                &lt;/nav&gt;</code>
+                    
+                              </div>
+                            </div>
+                          </div><br>
+
+                          <!-- segundo grupo de ejemplos -->
+                          <div class="container">
+                            <div class="row">
+                              <div class="col">
+                              <h3>NAVBAR con menú</h3>
+                              <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a7cbe6;">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#">LOGO</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Enlace 1</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Enlace 2</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link disabled">Enlace Desactivado</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                              <p>Los enlaces de navegación de la barra de navegación se basan en nuestras .nav opciones con su propia clase de modificador y requieren el uso de clases de alternancia para un estilo receptivo adecuado. La navegación en las barras de navegación también crecerá para ocupar tanto espacio horizontal como sea posible para mantener el contenido de la barra de navegación alineado de forma segura.</p>
+                                <code>&lt;nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a7cbe6;"&gt;<br>
+                                &nbsp; &lt;div class="container-fluid"&gt;<br>
+                                &nbsp;&nbsp; &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;<br>
+                                &nbsp;&nbsp; &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"&gt;<br>
+                                &nbsp;&nbsp; &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
+                                &nbsp; &lt;/button&gt;<br>
+                                &nbsp;&nbsp; &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;<br>
+                                &nbsp;&nbsp; &lt;ul class="navbar-nav"&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Home&lt;/a&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 2&lt;/a&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link disabled"&gt;Enlace Desactivado&lt;/a&gt;<br>
+                                &nbsp;&nbsp; &lt;/li&gt;<br>
+                                &nbsp;&nbsp; &lt;/ul&gt;<br>
+                                &nbsp; &lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/nav&gt;</code>
+                              </div>
+                              <div class="col">
+                                <h3>NAVBAR con submenú desplegable</h3>
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                                  <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">LOGO</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                      <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Enlace 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Enlace 2</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Enlace Desplegable
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Sub-Enlace 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub-Enlace 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub-Enlace 3</a></li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </nav>
+                                <p>También puede usar menús desplegables en su barra de navegación. Los menús desplegables requieren un elemento envolvente para el posicionamiento, así que asegúrese de usar elementos separados y anidados para .nav-itemy .nav-linkcomo se muestra a continuación.</p>
+                    
+                            <code>
+                              &lt;nav class="navbar navbar-expand-lg navbar-dark bg-primary"&gt;<br>
+                              &nbsp; &lt;div class="container-fluid"&gt;<br>
+                              &nbsp;&nbsp; &lt;a class="navbar-brand" href="#"&gt;LOGO&lt;/a&gt;<br>
+                              &nbsp;&nbsp; &lt;button class="navbar-toggler" type="button" 
+                              data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"&gt;<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
+                              &lt;/button&gt;<br>
+                              &nbsp;&nbsp; &lt;div class="collapse navbar-collapse" id="navbarNavDropdown"&gt;<br>
+                                &nbsp; &lt;ul class="navbar-nav"&gt;<br>
+                                &nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link active" aria-current="page" href="#"&gt;Home&lt;/a&gt;
+                                &nbsp;&nbsp; &lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link" href="#"&gt;Enlace 1&lt;/a&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link" href="#"&gt;Enlace  2&lt;/a&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;/li&gt;<br>
+                                &nbsp;&nbsp; &lt;li class="nav-item dropdown"&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                                Enlace Desplegable
+                                &lt;/a&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"&gt;<br>
+                                &nbsp;&nbsp; &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Sub-Enlace 1&lt;/a&gt;&lt;/li&gt;<br>
+                                &nbsp;&nbsp; &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Sub-Enlace 2&lt;/a&gt;&lt;/li&gt;<br>
+                                &nbsp;&nbsp; &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Sub-Enlace 3&lt;/a&gt;&lt;/li&gt;<br>
+                                          &lt;/ul&gt;
+                                        &lt;/li&gt;
+                                      &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                &lt;/nav&gt;</code>
+                              </div>
+                            </div>
+                          </div><br>
+                          <!-- tercer grupo de ejemplos -->
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <h3>Navegación con contenido externo</h3>
+
+                              <div class="collapse" id="navbarToggleExternalContent">
+                                <div class="bg-dark p-4">
+                                  <h5 class="text-white h4">Contenido Colapsado</h5>
+                                  <span class="text-muted">Conmutable a través de la marca de la barra de navegación.</span>
+                                </div>
+                              </div>
+                              <nav class="navbar navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                </div>
+                              </nav>
+
+                              <p>A veces, desea utilizar el complemento de colapso para activar un elemento contenedor para el contenido que se encuentra estructuralmente fuera del archivo .navbar. ¡ Debido a que nuestro complemento funciona en idy data-bs-targetemparejando, eso se hace fácilmente!</p>
+
+                              <code>
+                                &lt;div class="collapse" id="navbarToggleExternalContent"&gt;<br>
+                                &nbsp;&nbsp; &lt;div class="bg-dark p-4"&gt;<br>
+                                &nbsp;&nbsp; &nbsp; &lt;h5 class="text-white h4"&gt;Contenido Colapsadot&lt;/h5&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="text-muted"&gt;texto a través del NAVBAR.&lt;/span&gt;<br>
+                                &nbsp;&nbsp; &lt;/div&gt;<br>
+                                &nbsp;&nbsp; &lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;nav class="navbar navbar-dark bg-dark"&gt;<br>
+                                &nbsp;&nbsp; &lt;div class="container-fluid"&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"&gt;<br>
+                                &nbsp;&nbsp;&nbsp; &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
+                                &nbsp;&nbsp; &lt;/button&gt;<br>
+                                &nbsp; &lt;/div&gt;<br>
+                                &lt;/nav&gt;
+                              </code>
+                              
+                            </div>
+                            <div class="col">
+                              <h3>Barra de Navegación con formularios</h3>
+
+                              <nav class="navbar navbar-light " style="background-color: #a7cbe6;">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand">Navbar</a>
+                                  <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </form>
+                                </div>
+                              </nav>
+                              <p>Se puede colocar varios controles de formulario y componentes dentro de una barra de navegación:</p>
+                              <p>Los elementos secundarios inmediatos de .navbar tienen un diseño flexible y se establecerán de forma predeterminada en justify-content: space-between. Use utilidades flexibles adicionales según sea necesario para ajustar este comportamiento.</p>
+                              
+                              <code>
+                                &lt;nav class="navbar navbar-light bg-light"&gt;<br>
+                                &nbsp; &lt;div class="container-fluid"&gt;<br>
+                                &nbsp;&nbsp; &lt;a class="navbar-brand"&gt;Navbar&lt;/a&gt;<br>
+                                &nbsp;&nbsp; &lt;form class="d-flex"&gt;<br>
+                                &nbsp;&nbsp; &lt;input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"&gt;<br>
+                                &nbsp;&nbsp; &lt;button class="btn btn-outline-success" type="submit"&gt;Search&lt;/button&gt;<br>
+                                &nbsp; &lt;/form&gt;<br>
+                                &lt;/div&gt;<br>
+                              &lt;/nav&gt;
+                            </code>
+                            </div>
+                          </div>
+                        </div><br>
+                        <!-- cuarto grupo de ejemplos -->
+                        <div class="container">
+                          <h3>Barra de navegación fuera del lienzo Offcanvas</h3>
+                          <p>
+                            Transforme su barra de navegación que se expande y contrae en un cajón
+                            fuera del lienzo con el complemento fuera del lienzo. Extendemos los
+                            estilos predeterminados de offcanvas y usamos nuestras
+                            .navbar-expand-*clases para crear una barra lateral de navegación
+                            dinámica y flexible. En el siguiente ejemplo, para crear una barra de
+                            navegación fuera del lienzo que siempre esté colapsada en todos los
+                            puntos de interrupción, omita la .navbar-expand-*clase por completo.
+                          </p>
+                          <nav class="navbar navbar-light bg-primary">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                              <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar"
+                                aria-controls="offcanvasNavbar"
+                              >
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div
+                                class="offcanvas offcanvas-end"
+                                tabindex="-1"
+                                id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel"
+                              >
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                    Offcanvas
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close text-reset"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#"
+                                        >Home</a
+                                      >
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Enlace 1</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                      <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="offcanvasNavbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                      >
+                                        Enlace Desplegable
+                                      </a>
+                                      <ul
+                                        class="dropdown-menu"
+                                        aria-labelledby="offcanvasNavbarDropdown"
+                                      >
+                                        <li>
+                                          <a class="dropdown-item" href="#">Sub-Enlace 1</a>
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">Sub-Enlace 3</a>
+                                        </li>
+                                        <li>
+                                          <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                          <a class="dropdown-item" href="#">Sub-Enlace 3</a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <form class="d-flex">
+                                    <input
+                                      class="form-control me-2"
+                                      type="search"
+                                      placeholder="Search"
+                                      aria-label="Search"
+                                    />
+                                    <button class="btn btn-outline-success" type="submit">
+                                      Search
+                                    </button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </nav>
+
+                          <code
+                            >&lt;nav class="navbar navbar-light bg-primary "&gt;<br />
+                            &nbsp; &lt;div class="container-fluid"&gt;<br />
+                            &nbsp;&nbsp;&nbsp; &lt;a class="navbar-brand" href="#"&gt;Offcanvas
+                            navbar&lt;/a&gt;<br />
+                            &nbsp;&nbsp; &lt;button class="navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"&gt; &nbsp;&nbsp;&nbsp;&nbsp; &lt;span
+                            class="navbar-toggler-icon"&gt;&lt;/span&gt;<br />
+                            &nbsp;&nbsp; &lt;/button&gt;<br />
+                            &nbsp; &lt;div class="offcanvas offcanvas-end" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"&gt;<br />
+                            &nbsp;&nbsp; &lt;div class="offcanvas-header"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;h5 class="offcanvas-title"
+                            id="offcanvasNavbarLabel"&gt;Offcanvas&lt;/h5&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;button type="button" class="btn-close
+                            text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"&gt;&lt;/button&gt;<br />
+                            &nbsp;&nbsp; &lt;/div&gt;<br />
+                            &nbsp;&nbsp;&nbsp; &lt;div class="offcanvas-body"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class="navbar-nav justify-content-end
+                            flex-grow-1 pe-3"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link active"
+                            aria-current="page" href="#"&gt; Home&lt;/a&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;li class="nav-item"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link"
+                            href="#"&gt;Link&lt;/a&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; &lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class="nav-item dropdown"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class="nav-link
+                            dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dropdown <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul
+                            class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a
+                            class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a
+                            class="dropdown-item" href="#"&gt;Another
+                            action&lt;/a&gt;&lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+                            &lt;hr class="dropdown-divider"&gt; &lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a
+                            class="dropdown-item" href="#"&gt;Something else
+                            here&lt;/a&gt;&lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&lt;form class="d-flex"&gt; &lt;input
+                            class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-outline-success"
+                            type="submit"&gt;Search&lt;/button&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+                            &nbsp;&nbsp;&lt;/div&gt;<br />
+                            &nbsp;&lt;/div&gt;<br />
+                            &nbsp;&lt;/div&gt;<br />
+                            &lt;/nav&gt;</code
+                          ><br />
+                        </div>
+
+                    </div>
                 </section>
             </div>
         </main>
@@ -68,23 +1209,23 @@
     <footer>
         <div class="datos">
             <address>
-              Clase de 2º de DAW
-              <br/>
-              IES Tetuán de las Victorias
-              <br/>
-              Dirección postal: Calle de la Vía Límite, Madrid
-              <br/>
-            </address> 
+                Clase de 2º de DAW
+                <br />
+                IES Tetuán de las Victorias
+                <br />
+                Dirección postal: Calle de la Vía Límite, Madrid
+                <br />
+            </address>
             &reg; Reservados todos los derechos. &reg;
-          </div>    
-          <div class="sello">
-              <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                  <img style="border:0;width:88px;height:31px"
-                      src="http://jigsaw.w3.org/css-validator/images/vcss"
-                      alt="¡CSS Válido!" />
-              </a>
-          </div>
+        </div>
+        <div class="sello">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="¡CSS Válido!" />
+            </a>
+        </div>
     </footer>
     <script src="./JS/scripts.js"></script>
 </body>
+
 </html>

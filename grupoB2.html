@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/estilos.css"/>
+    
     <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <!-- Favicon  -->
-    <link rel="icon" href="images/icons8-oreja.svg" type="faviconimage/x-icon">
+    <link rel="stylesheet" type="text/css" href="./CSS/estilosB.css"/>
     <title>Bootstrap</title>
 </head>
 <body>
+    <div class="container-fluid bg-bgMain">
     <header>
         <h1>Cabecera principal del Grupa B2</h1>
     </header>
     <nav>
-        <div class="navbar">
-            <a href="./index.html"><i class="fa fa-home"></i></a>
-            <a href="grupoB1.html">GrupoB1</a>
-            <a href="index.html">Index</a>
-            <a href="grupoA1.html">GrupoA1</a>
-            <a href="grupoA3.html">GrupoA3</a>
-            <a href="grupoB2.html">GrupoB2</a>
-            <a href="./index.html"></a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()"> grupoB2
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#ej1">Alerts</a>                   <!--Iván Soto-->
-                    <a href="#ej2">Buttons</a>                  <!--Raúl Pérez-->
-                    <a href="#ej3">Button Groups</a>            <!--Raúl Pérez-->
-                    <a href="#ej4">Badges</a>                   <!--Iván Soto-->
-                    <a href="#ej5">Progress Bars</a>            <!--Raúl Hernández-->
-                    <a href="#ej6">Spinners</a>                 <!--Raúl Hernández-->
-                    <a href="#ej7">Formulario especifico</a>    <!--Muriel González-->
-                </div>
-            </div>
+        <div class="navegacion">
+            <br>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="grupoA1.html">Grupo A1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="grupoA2.html">Grupo A2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="grupoA3.html">Grupo A3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="grupoB2.html">Grupo B2</a>
+                            </li>
+                        </ul>
+                    </nav>
         </div>
     </nav>
     <div class="main">
         <main>
-            <div class="ej1">            
+            <div class="container-fluid mt-3">
+            <div class="row">
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej1">
                     <!-- Iván Soto esta es tu area de trabajo -->
-                    <h2>Alerts</h2><br><br>
+                    <h2 class="mt-3 text-center text-fontColor">Alerts</h2><br><br>
                     <div class="container">
                         <div>
-                            <p>
+                            <p class="text-fontColor">
                                 Las alertas funcionan como una clase para los div utilizando el atributo class y el atributo role
                                 ademas de una subclase.
                                 Por ejemplo, divs con la class alert y el role alert con las distintas subclases de alerts en
@@ -90,7 +94,7 @@
                                 Dark alert!
                             </div>
 
-                            <p> Codigo de un primary alert: </p>
+                            <p class="text-fontColor"> Codigo de un primary alert: </p>
 
                             <code>&lt;div class="alert alert-primary" role="alert"&gt;
                                 Primary alert!
@@ -106,7 +110,7 @@
                 
                             <div class="alert alert-success" role="alert">
                                 <h4 class="alert-heading"> ¡Mira, es un encabezado en un alert! </h4>
-                                <p> ¡Eso es! Acabas de leer este mensaje de alerta tan importante.</p>
+                                <p class="text-fontColor"> ¡Eso es! Acabas de leer este mensaje de alerta tan importante.</p>
                                 <hr>
                                 <p class="mb-0"> Y ahora acabas de aprender que muchos otros elementos pueden ser incluidos dentro de un alert.</p>
                               
@@ -145,19 +149,19 @@
                 </section>
             </div>
 
-            <div class="ej2">            
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej2">
                     <!-- Raúl Pérez esta es tu area de trabajo -->
-                    <h2>Botones y grupo de botones</h2><br><br>
+                    <h2 class="mt-3 text-center text-fontColor">Botones y grupo de botones</h2><br><br>
                     <div class="container">
                     <div class="raulpcontainer">
-                        <p>Bootstrap 5 proporciona diferentes estilos de botones para acciones en formularios, cuadros
+                        <p class="text-fontColor">Bootstrap 5 proporciona diferentes estilos de botones para acciones en formularios, cuadros
                             de
                             diálogo y más con soporte para múltiples tamaños, estados y más.</p>
 
                         <div>
-                            <h4>Estilo de botones</h4>
-                            <p>Las clases de botones se pueden usar en elementos <span
+                            <h4 class="text-fontColor">Estilo de botones</h4>
+                            <p class="text-fontColor">Las clases de botones se pueden usar en elementos <span
                                     style="color: red; font-weight: bolder;">a , button o input</span></p>
                             <button type="button" class="btn btn-primary">Primary</button>
                             <button type="button" class="btn btn-danger">Danger</button>
@@ -174,8 +178,8 @@
                         </code>
 
                         <div>
-                            <h4>Contorno del botón</h4>
-                            <p>Reemplace las clases de modificador predeterminadas con las <span
+                            <h4 class="text-fontColor">Contorno del botón</h4>
+                            <p class="text-fontColor">Reemplace las clases de modificador predeterminadas con las <span
                                     style="color: red; font-weight: bolder;">.btn-outline-*</span> que eliminan todas
                                 las imágenes y colores de fondo en cualquier botón.</p>
                             <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -190,8 +194,8 @@
                         </code>
 
                         <div>
-                            <h4>Tamaño de los botones</h4>
-                            <p>Use la <span style="color: red; font-weight: bolder;">.btn-lg</span> clase para botones
+                            <h4 class="text-fontColor">Tamaño de los botones</h4>
+                            <p class="text-fontColor">Use la <span style="color: red; font-weight: bolder;">.btn-lg</span> clase para botones
                                 grandes o <span style="color: red; font-weight: bolder;">.btn-sm</span> la clase para
                                 botones pequeños:</p>
                             <button type="button" class="btn btn-primary btn-lg">Large</button>
@@ -208,8 +212,8 @@
                         </code>
 
                         <div>
-                            <h4>Botones de nivel de bloque</h4>
-                            <p>Para crear un botón de nivel de bloque que abarque todo el ancho del elemento principal,
+                            <h4 class="text-fontColor">Botones de nivel de bloque</h4>
+                            <p class="text-fontColor">Para crear un botón de nivel de bloque que abarque todo el ancho del elemento principal,
                                 use la <span style="color: red; font-weight: bolder;">.d-grid</span> clase "ayudante" en
                                 el elemento principal.
                                 Si tiene muchos botones a nivel de bloque, puede controlar el espacio entre ellos con la
@@ -233,8 +237,8 @@
                         </code>
 
                         <div>
-                            <h4>Botones activos/deshabilitados</h4>
-                            <p>Un botón se puede establecer en un estado activo (aparece presionado) o deshabilitado (no
+                            <h4 class="text-fontColor">Botones activos/deshabilitados</h4>
+                            <p class="text-fontColor">Un botón se puede establecer en un estado activo (aparece presionado) o deshabilitado (no
                                 se puede hacer clic).
                                 La clase <span style="color: red; font-weight: bolder;">.active</span> hace que un botón
                                 parezca presionado y el <span style="color: red; font-weight: bolder;">disabled</span>
@@ -251,8 +255,8 @@
                         </code>
 
                         <div>
-                            <h4>Botones giratorios</h4>
-                            <p>También puede agregar "spinners" a un botón</p>
+                            <h4 class="text-fontColor">Botones giratorios</h4>
+                            <p class="text-fontColor">También puede agregar "spinners" a un botón</p>
                             <button class="btn btn-primary">
                                 <span class="spinner-border spinner-border-sm"></span>
                             </button>
@@ -299,33 +303,33 @@
                 </section>
             </div>
 
-            <div class="ej3">            
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej3">
                     <!-- Raúl Pérez esta es tu area de trabajo -->
-                    <h2>Grupo de botones</h2><br><br>
+                    <h2 class="mt-3 text-center text-fontColor">Grupo de botones</h2><br><br>
                     <div class="container">
-                        <p>Los grupos de botones permite agrupar una serie de botones (en una sola línea).</p><br>
+                        <p class="text-fontColor">Los grupos de botones permite agrupar una serie de botones (en una sola línea).</p><br>
 
                         <div>
-                            <p> Use un <span style="color: red; font-weight: bolder;">div</span> elemento con clase
+                            <p class="text-fontColor"> Use un <span style="color: red; font-weight: bolder;">div</span> elemento con clase
                                 <span style="color: red; font-weight: bolder;">.btn-group</span> para crear un grupo de botones.
                                 En lugar de aplicar tamaños de botón a cada botón de un grupo, use class <span style="color: red; font-weight: bolder;">.btn-group-lg</span> para un grupo
                                 de botones grande o <span style="color: red; font-weight: bolder;">.btn-group-sm</span> para un grupo de botones pequeño:</p>
-                            <p>Large Buttons:</p>
+                            <p class="text-fontColor">Large Buttons:</p>
                             <div class="btn-group btn-group-lg">
                                 <button type="button" class="btn btn-primary">Apple</button>
                                 <button type="button" class="btn btn-primary">Samsung</button>
                                 <button type="button" class="btn btn-primary">Sony</button>
                             </div>
                             <hr>
-                            <p>Default Buttons:</p>
+                            <p class="text-fontColor">Default Buttons:</p>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary">Apple</button>
                                 <button type="button" class="btn btn-primary">Samsung</button>
                                 <button type="button" class="btn btn-primary">Sony</button>
                             </div>
                             <hr>
-                            <p>Small Buttons:</p>
+                            <p class="text-fontColor">Small Buttons:</p>
                             <div class="btn-group btn-group-sm">
                                 <button type="button" class="btn btn-primary">Apple</button>
                                 <button type="button" class="btn btn-primary">Samsung</button>
@@ -348,8 +352,8 @@
                         </code>
 
                         <div>
-                            <h4>Grupos de botones verticales</h4>
-                            <p>Usa la clase <span
+                            <h4 class="text-fontColor">Grupos de botones verticales</h4>
+                            <p class="text-fontColor">Usa la clase <span
                                     style="color: red; font-weight: bolder;">.btn-group-vertical</span>para crear un
                                 grupo de botones verticales:</p>
                             <div class="btn-group-vertical">
@@ -368,8 +372,8 @@
                         </code>
 
                         <div>
-                            <h4>Grupos de botones uno al lado del otro</h4>
-                            <p>Los grupos de botones están "en línea" de forma predeterminada, lo que hace que aparezcan uno al lado del otro cuando tiene varios grupos:</p>
+                            <h4 class="text-fontColor">Grupos de botones uno al lado del otro</h4>
+                            <p class="text-fontColor">Los grupos de botones están "en línea" de forma predeterminada, lo que hace que aparezcan uno al lado del otro cuando tiene varios grupos:</p>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary">Apple</button>
                                 <button type="button" class="btn btn-primary">Samsung</button>
@@ -400,8 +404,8 @@
                         </code>
 
                         <div>
-                            <h4>Grupos de botones anidados y menús desplegables</h4>
-                            <p>Anide grupos de botones para crear menús desplegables</p>
+                            <h4 class="text-fontColor">Grupos de botones anidados y menús desplegables</h4>
+                            <p class="text-fontColor">Anide grupos de botones para crear menús desplegables</p>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary">Apple</button>
                                 <button type="button" class="btn btn-primary">Samsung</button>
@@ -435,18 +439,18 @@
                 </section>
             </div>
 
-            <div class="ej3">            
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej4">
                     <!-- Iván Soto esta es tu area de trabajo -->
-                    <h2>Badges</h2><br><br>
+                    <h2 class="mt-3 text-center text-fontColor">Badges</h2><br><br>
                     <div class="container">
-                                <p>
+                                <p class="text-fontColor">
                                     Una badge o insignia o insignias son etiquetas (label) que en bootstrap funcionan con una clase
                                     badge" y una subclase, en este caso "badge-secondary"
                                 </p>
                     
                                 <h3> UN TITULO <span class="badge bg-secondary"> una badge </span> </h3>
-                                <p>
+                                <p class="text-fontColor">
                                     Las badges escalan hasta el tamaño del elemento padre. En el ejemplo tenemos
                                     3 titulos de distintos tamaños con el mismo badge que escalan a el mismo tamaño
                                     que el elemento titulo del que descienden.
@@ -458,13 +462,13 @@
 
                                 <code>&lt;h1&gt; SOY UN TITULO GRANDE &lt;span class="badge bg-secondary"&gt; badge grande &lt;/span&gt; &lt;/h1&gt;</code> <br> <br>
                     
-                                <p>
+                                <p class="text-fontColor">
                                     Las badges pueden ir dentro de elementos como por ejemplo button.
                                 </p>
                     
                                 <button class="btn btn-primary"> Botón <span class="badge bg-info"> Badge </span> </button>
                     
-                                <p>
+                                <p class="text-fontColor">
                                     Las badges pueden tambien tener tambien otra posición relativa al elemento que las contiene.
                                 </p>
                     
@@ -477,7 +481,7 @@
                                     Inbox &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
                                         99+ &lt;/span&gt; <br>
                                 &lt;/button&gt; </code> <br><br>
-                                <p>
+                                <p class="text-fontColor">
                                     Bootstrap 5 cuenta con 8 subclases de badged en función del color.
                                 </p>
                     
@@ -492,7 +496,7 @@
                                 <br><br>
                                 <code> &lt;span class="badge bg-primary"&gt; Primary &lt;/span&gt; </code>
                     
-                                <p>
+                                <p class="text-fontColor">
                                     Por ultimo las badge pueden redondearse usando la clase rounded-pill y el texto puede cambiarse a
                                     negro usando la clase text-dark.
                                 </p>
@@ -501,13 +505,13 @@
                 </section>
             </div>
 
-            <div class="ej5">            
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej5">
                     <!-- Raul Hernández esta es tu area de trabajo -->
-                    <h2>Progress Bars</h2><br><br>
+                    <h2 class="mt-3 text-center text-fontColor">Progress Bars</h2><br><br>
                     <div class="container">
                         <h3>Basic Progress Bar</h3>
-                        <p>Las Progress Bars se utilizan para mostrar al usuario como va un progreso <br>
+                        <p class="text-fontColor">Las Progress Bars se utilizan para mostrar al usuario como va un progreso <br>
                            para crear una progress bar usamos la clase <code>progress</code> al contenedor y la clase <code>progress-bar</code> al div hijo</p>
                         <code>
                             &lt;div class="progress"&gt;
@@ -520,7 +524,7 @@
 
                         <br><br>
                         <h3>Etiquetas</h3>
-                        <p>Se puede añadir texto dentro de las progress bars</p>
+                        <p class="text-fontColor">Se puede añadir texto dentro de las progress bars</p>
                         <code>
                             &lt;div class="progress"&gt;
                             &lt;div class="progress-bar" style="width:70%"&gt;70%&lt;/div&gt;
@@ -532,7 +536,7 @@
 
                         <br><br>
                         <h3>Colores</h3>
-                        <p>Se utiliza la propiedad de fondo para agregar un color a la progress bar como <code>background-color:</code> o <code>bg-</code> de bootstrap</p></p>
+                        <p class="text-fontColor">Se utiliza la propiedad de fondo para agregar un color a la progress bar como <code>background-color:</code> o <code>bg-</code> de bootstrap</p></p>
                         <code>
                             &lt;div class="progress"&gt;
                             &lt;div class="progress-bar bg-danger" style="width:50%"&gt;Rojo&lt;/div&gt;
@@ -562,7 +566,7 @@
 
                         <br><br>
                         <h3>Striped Progress Bars</h3>
-                        <p>Se añade la clase <code>progress-bar-striped</code> para crear una progress bar rallada</p>
+                        <p class="text-fontColor">Se añade la clase <code>progress-bar-striped</code> para crear una progress bar rallada</p>
                         <code>
                             &lt;div class="progress"&gt;
                             &lt;div class="progress-bar progress-bar-striped" style="width:40%"&gt;&lt;/div&gt;
@@ -574,7 +578,7 @@
 
                         <br><br>
                         <h3>Animaciones</h3>
-                        <p>Se pueden crear progress bar animadas añadiendo la clase <code>progress-bar-animated</code></p>
+                        <p class="text-fontColor">Se pueden crear progress bar animadas añadiendo la clase <code>progress-bar-animated</code></p>
                         <code>
                             &lt;div class="progress"&gt;
                             &lt;div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"&gt;&lt;/div&gt;
@@ -586,7 +590,7 @@
 
                         <br><br>
                         <h3>Multiple</h3>
-                        <p>Las progress bar tambien se pueden poner una a continuacion de la otra poniendolas todas dentro del mismo div con la clase <code>progress</code></p>
+                        <p class="text-fontColor">Las progress bar tambien se pueden poner una a continuacion de la otra poniendolas todas dentro del mismo div con la clase <code>progress</code></p>
                         <code>
                             &lt;div class="progress"&gt;<br>
                             &lt;div class="progress-bar bg-success" style="width:40%"&gt;Libre
@@ -606,13 +610,13 @@
                 </section>
             </div>
 
-            <div class="ej6">            
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej6">
                     <!-- Raul Hernández esta es tu area de trabajo -->
-                    <h2>Spinners</h2><br>
+                    <h2 class="mt-3 text-center text-fontColor">Spinners</h2><br>
                     <div class="container">
                         <h3>Border spinner</h3>
-                        <p>Los spinners se utilizan para mostrar al usuario el estado de carga en la web <br>
+                        <p class="text-fontColor">Los spinners se utilizan para mostrar al usuario el estado de carga en la web <br>
                             para crear un spinner usamos la clase <code>spinner-border</code></p>
                         <code>
                             &lt;div class="spinner-border" role="status"&gt;
@@ -623,7 +627,7 @@
 
                         <br><br>
                         <h3>Colores</h3>
-                        <p>Se utiliza la propiedad de color de texto para agregar un color al spinner como <code>color:</code> o <code>text-</code> de bootstrap</p>
+                        <p class="text-fontColor">Se utiliza la propiedad de color de texto para agregar un color al spinner como <code>color:</code> o <code>text-</code> de bootstrap</p>
                         <code>
                             &lt;div class="spinner-border text-danger" role="status"&gt;&lt;/div&gt;
                         </code><br><br>
@@ -639,7 +643,7 @@
                         
                         <br><br>
                         <h3>Growing spinners</h3>
-                        <p>Son spinners que en vez de girar crecen, se utiliza <code>spinner-grow</code> y utilizan la propiedad de color del texto al igual que los anteriores</p>
+                        <p class="text-fontColor">Son spinners que en vez de girar crecen, se utiliza <code>spinner-grow</code> y utilizan la propiedad de color del texto al igual que los anteriores</p>
                         <code>
                             &lt;div class="spinner-grow"&gt;&lt;/div&gt;
                         </code><br><br>
@@ -655,7 +659,7 @@
 
                         <br><br>
                         <h3>Tamaño</h3>
-                        <p>Se puede ajustar el tamaño de los spinners usando las clases <code>spinner-border-sm</code> y <code>spinner-grow-sm</code> <br> tambien se puede usar css para determinar sus dimensiones con <code>width:</code> y <code>height:</code></p>
+                        <p class="text-fontColor">Se puede ajustar el tamaño de los spinners usando las clases <code>spinner-border-sm</code> y <code>spinner-grow-sm</code> <br> tambien se puede usar css para determinar sus dimensiones con <code>width:</code> y <code>height:</code></p>
                         <code>
                             &lt;div class="spinner-border spinner-border-sm" role="status"&gt;&lt;/div&gt; <br>
                             &lt;div class="spinner-grow spinner-grow-sm" role="status"&gt;&lt;/div&gt;
@@ -665,7 +669,7 @@
 
                         <br><br>
                         <h3>Botones</h3>
-                        <p>Tambien se pueden añadir spinners a los botones</p>
+                        <p class="text-fontColor">Tambien se pueden añadir spinners a los botones</p>
                         <code>
                             &lt;button class="btn btn-primary"&gt;
                             &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
@@ -685,24 +689,24 @@
                 </section>
             </div>
 
-            <div class="ej7">            
+            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">            
                 <section id="ej7">
                     <!-- Muriel esta es tu area de trabajo: formulario especifico-->
-                    <h2>Formulario Específico</h2><br><br>
-                    <p>Este formulario es la puesta en práctica de todo lo aprendido. Con las ideas que han ido surgiendo de diferentes investigaciones de cada apartado.</p>
-                    <p>Además de organizar el tamaño del formulario, por ahora estático, e introducir dos select y un radio.</p>
-                    <p>Se ha conseguido que al pulsar el botón Enviar (JavaScript) se cambie la clase Bootstrap del form a
+                    <h2 class="mt-3 text-center text-fontColor">Formulario Específico</h2><br><br>
+                    <p class="text-fontColor">Este formulario es la puesta en práctica de todo lo aprendido. Con las ideas que han ido surgiendo de diferentes investigaciones de cada apartado.</p>
+                    <p class="text-fontColor">Además de organizar el tamaño del formulario, por ahora estático, e introducir dos select y un radio.</p>
+                    <p class="text-fontColor">Se ha conseguido que al pulsar el botón Enviar (JavaScript) se cambie la clase Bootstrap del form a
                         "was-validated". Esto hará la llamada a las librerías de Bootstrap y se comprobará que estén todos los campos rellenos y salgan en verde los que están bien y en rojo más un mensaje debajo los que están mal. ref: <a href="https://getbootstrap.com/docs/5.0/forms/validation/">etbootstrap.com forms validation</a></p>
-                    <p> Además se ha añadido un icino de Bootstrap.Para esto, en la cabecera 
-                    <p>Se ha añadido un alert informativo de Bootstrap para enlazar con un documento de términos y condiciones.</p>  
+                    <p class="text-fontColor"> Además se ha añadido un icino de Bootstrap.Para esto, en la cabecera 
+                    <p class="text-fontColor">Se ha añadido un alert informativo de Bootstrap para enlazar con un documento de términos y condiciones.</p>  
                     <code>'&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"&gt;' más el icono deseado de alerta
                     &lt;i class="bi bi-exclamation-triangle"&gt;&lt;/i&gt; </code> </p>
-                    <p>Tambien se ha añaido un evento para lanzar un spiner de Bootstrap cuando se rellena el campo "Alias" simulando que se chequea con la BBDD si esta disponible.</p>
-                    <p>Se ha integrado una barra de progreso de Bootstrap con JavaScript para simular el progreso al rellenar campos en el formulario.</p>
+                    <p class="text-fontColor">Tambien se ha añaido un evento para lanzar un spiner de Bootstrap cuando se rellena el campo "Alias" simulando que se chequea con la BBDD si esta disponible.</p>
+                    <p class="text-fontColor">Se ha integrado una barra de progreso de Bootstrap con JavaScript para simular el progreso al rellenar campos en el formulario.</p>
                     
-                    <p>La temática es un formulario de registro para una app social que admite pagos.</p><br>
+                    <p class="text-fontColor">La temática es un formulario de registro para una app social que admite pagos.</p><br>
                     <div class="container">
-                        <!-- <h4>Formulario de Registro</h4> -->
+                        <!-- <h4 class="text-fontColor">Formulario de Registro</h4> -->
                         <div class="container mt-3">                            
                             <div class="progress">
                               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="barra"></div>
@@ -710,7 +714,7 @@
                           </div>
                         <form id="formulario" class="row g-3 needs-validation" novalidate>
                             <!-- Primeros datos -->
-                            <h4>Primeros datos</h4>
+                            <h4 class="text-fontColor">Primeros datos</h4>
                             <div class="container-fluid">
                                 <div class="col-4">
                                     <label for="alias" class="form-label">Alias:</label>
@@ -891,29 +895,49 @@
                     </div>
                 </section>
             </div>
-            
+        </div>
+        </div>    
         </main>
     </div>
     <footer>
-        <div class="datos">
-            <address>
-              Clase de 2º de DAW
-              <br/>
-              IES Tetuán de las Victorias
-              <br/>
-              Dirección postal: Calle de la Vía Límite, Madrid
-              <br/>
-            </address> 
-            &reg; Reservados todos los derechos. &reg;
-          </div>    
-          <div class="sello">
-              <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                  <img style="border:0;width:88px;height:31px"
-                      src="http://jigsaw.w3.org/css-validator/images/vcss"
-                      alt="¡CSS Válido!" />
-              </a>
-          </div>
+        <div class="social">
+            
+            <h5>Social: </h5>
+            <br>
+            <a href="#"><img src="./images/twitter.png" width="30" height="30"/></a>
+            <a href="#"><img src="./images/facebook.png" width="30" height="30"/></a>
+            <a href="#"><img src="./images/instagram.png" width="30" height="30"/></a>
+        </div>
+        <div class="copy">
+            
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+        <br>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoA1.html">Grupo A1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoA2.html">Grupo A2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoA3.html">Grupo A3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoB2.html">Grupo B2</a>
+                </li>
+            </ul>
+        </nav>
+
     </footer>
+</div>
     <script src="./JS/scripts.js"></script>
     <script>
         /*//Obtengo el formulario en variable
@@ -968,7 +992,7 @@
             barra.style.width = procentaje + '%';
             }, true);
 
-
+    
       </script>
         <script>
             var spinner = document.getElementById('spinner');
