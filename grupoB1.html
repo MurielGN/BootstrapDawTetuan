@@ -2,69 +2,61 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Latest compiled and minified CSS -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" type="text/css" href="./CSS/estilosB.css"/>
-  <style>
-      *{
-   margin: 0;
-   padding: 0; 
-}
-body{
-    background-color: aquamarine;
-    height: 100%;
-    display: grid;
-    place-items: center;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.box{
-    background-color: rgb(231, 231, 231);
-    padding: 20px 20px 20px 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,1);
-    display: flex;
-    align-items: center;
-}
-.box .value{
-    color: black;
-}
-.box .slider{
-    height: 40px;
-    width: 300px;
-    display: flex;
-    align-items:center;
-    margin-right: 15px;
-}
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/estilosB.css" />
+    <!-- Estilo css para que se vean los cambios en el range -->
+    <style>
+        .box {
+            background-color: rgb(231, 231, 231);
+            padding: 20px 20px 20px 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+            display: flex;
+            align-items: center;
+        }
 
-.box .slider input{
-    height: 10px;
-    width: 100%;
-    -webkit-appearance: none;
-    outline: none;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    box-shadow: inset 0px 0px 4px rgba(0,0,0,2);
-}
-  </style>
-  <title>Bootstrap</title>
+        .box .value {
+            color: black;
+        }
+
+        .box .slider {
+            height: 40px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .box .slider input {
+            height: 10px;
+            width: 100%;
+            -webkit-appearance: none;
+            outline: none;
+            background-color: #f2f2f2;
+            border-radius: 25px;
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 2);
+        }
+    </style>
+    <title>Bootstrap</title>
 </head>
 
 <body>
     <div class="container-fluid bg-bgMain">
-    <header>
-        <h1 class="text-center text-fontColor">Grupo B1</h1>
-    </header>
-    <nav>
-      <div class="navegacion">
-        <br>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <header>
+            <h1 class="text-center text-fontColor">Grupo B1</h1>
+        </header>
+        <nav>
+            <div class="navegacion">
+                <br>
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
@@ -81,41 +73,50 @@ body{
                         <li class="nav-item">
                             <!--<a class="nav-link" href="grupoB1.html">Grupo B1</a>-->
                             <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="grupoB1.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  GRUPO B1
+                                <a class="nav-link dropdown-toggle" href="grupoB1.html" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    GRUPO B1
                                 </a>
                                 <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item text-fontColor" href="#ej1">Select Menu</a></li>      <!--Alonso Madrona-->
-                                  <li><a class="dropdown-item text-fontColor" href="#ej2">Forms</a></li>            <!--Alonso Madrona-->
-                                  <li><a class="dropdown-item text-fontColor" href="#ej3">Range</a></li>            <!--Iván Cerrajería-->
-                                  <li><a class="dropdown-item text-fontColor" href="#ej4">Floating Labels</a></li>  <!--Iván Cerrajería-->
-                                  <li><a class="dropdown-item text-fontColor" href="#ej5">Input Groups</a></li>     <!--Cristina Rodríguez-->
-                                  <li><a class="dropdown-item text-fontColor" href="#ej6">Checks & radios</a></li>  <!--Cristina Rodríguez-->
-                                  <li><a class="dropdown-item text-fontColor" href="#ej7">Form validation</a></li>  <!--Javier Villarejo-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej1">Select Menu</a></li>
+                                    <!--Alonso Madrona-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej2">Forms</a></li>
+                                    <!--Alonso Madrona-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej3">Range</a></li>
+                                    <!--Iván Cerrajería-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej4">Floating Labels</a></li>
+                                    <!--Iván Cerrajería-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej5">Input Groups</a></li>
+                                    <!--Cristina Rodríguez-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej6">Checks & radios</a></li>
+                                    <!--Cristina Rodríguez-->
+                                    <li><a class="dropdown-item text-fontColor" href="#ej7">Form validation</a></li>
+                                    <!--Javier Villarejo-->
                                 </ul>
-                              </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="grupoB2.html">Grupo B2</a>
                         </li>
                     </ul>
                 </nav>
-    </div>
-    </nav>
-    <div class="main">
-        <main>
-           <div class="container-fluid mt-3">
-            <div class="row">
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej1">
-                    <!-- Nombre esta es tu area de trabajo -->
-                    <h2 class="mt-3 text-center text-fontColor">Select Menu</h2><br><br>
-                    <div class="container">
-                        <h3 class="text-fontColor">Select desplegable</h3>
-                        <p class="text-fontColor">El select nos permite crear un <b>menu en este caso desplegable.</b></p>
-                        </p>
+            </div>
+        </nav>
+        <div class="main">
+            <main>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej1">
+                                <!-- Nombre esta es tu area de trabajo -->
+                                <h2 class="mt-3 text-center text-fontColor">Select Menu</h2><br><br>
+                                <div class="container">
+                                    <h3 class="text-fontColor">Select desplegable</h3>
+                                    <p class="text-fontColor">El select nos permite crear un <b>menu en este caso
+                                            desplegable.</b></p>
+                                    </p>
 
-                        <code>
+                                    <code>
                             &lt;h4&gt;¿Con que frecuencia sales a comer a restaurantes?&lt;/h4&gt;<br>
                             &lt;!--<br>
                              SELECT<br>
@@ -128,22 +129,25 @@ body{
                            &lt;/select&gt;<br>
                         </code><br><br>
 
-                        <form>
-                            <h4 class="text-fontColor"><i>¿Con qué frecuencia sales a comer a restaurantes?</i></h4>
-                            <!--
+                                    <form>
+                                        <h4 class="text-fontColor"><i>¿Con qué frecuencia sales a comer a
+                                                restaurantes?</i></h4>
+                                        <!--
                              SELECT
                              He utlizado un select de forma desplegable para que me muestre varias opciones y que el usuario pueda escoger una.
                             -->
-                           <select class="form-select" aria-label="Default select example">
-                             <option selected>1-2 veces al mes</option>
-                             <option value="1">3-5 veces al mes</option>
-                             <option value="2">mas de 5 veces al mes</option>
-                           </select>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>1-2 veces al mes</option>
+                                            <option value="1">3-5 veces al mes</option>
+                                            <option value="2">mas de 5 veces al mes</option>
+                                        </select>
 
-                        <br><br>
-                        <h3 class="text-fontColor">Select sin ser desplegable</h3>
-                        <p class="text-fontColor">El select nos permite crear un menu en este caso no es desplegable y el usuario tiene que <b>scrolear para ver todas las opciones.</b></p>
-                        <code>
+                                        <br><br>
+                                        <h3 class="text-fontColor">Select sin ser desplegable</h3>
+                                        <p class="text-fontColor">El select nos permite crear un menu en este caso no es
+                                            desplegable y el usuario tiene que <b>scrolear para ver todas las
+                                                opciones.</b></p>
+                                        <code>
                             &lt;form&gt;<br>
                             &lt;h4&gt;Que estilo de comida le gusta:&lt;/h4&gt;<br>
                             &lt;!--<br>
@@ -159,35 +163,38 @@ body{
                                 &lt;option value="5"&gt;Alemana&lt;/option&gt;<br>
                             &lt;/select&gt;                    
                         </code><br><br>
-                        <h4 class="text-fontColor"><i>¿Qué estilo de comida le gusta?</i></h4>
-                        <!--
+                                        <h4 class="text-fontColor"><i>¿Qué estilo de comida le gusta?</i></h4>
+                                        <!--
                         SELECT
                         Aquí he vuelto a utilizar un select pero esta vez no es desplegable sino que aparecen todas las opciones directamenete
                         y el usuario tan solo tiene que scrolear hacia arriba o hacia abajo 
                         -->
-                        <select class="form-select form-select-lg mb-3" size="3" aria-label="size 3 select example">
-                            <option value="1">Mexicana</option>
-                            <option value="2">China</option>
-                            <option value="3">Francesa</option>
-                            <option value="4">Española</option>
-                            <option value="5">Alemana</option>
-                        </select>
-                    </div>
-                </section>
-            </div>
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej2">
-                    <h2 class="mt-3 text-center text-fontColor">Forms</h2><br><br>
-                    <p class="text-fontColor">
-                        Los grupos de listas son un componente flexible y potente para mostrar una serie de contenidos.
-                        En la etiqueta ul le tendremos que agregar .list-group.
-                    </p><br>
-                    <div class="alumno1container">
-                        <h3 class="text-fontColor">Textarea</h3>
-                        <p class="text-fontColor">El textarea nos permite generar un <b>cuadro de texto</b> en el que el usuario puede introducir un texto relativamente largo.</b></p>
-                        </p>
+                                        <select class="form-select form-select-lg mb-3" size="3"
+                                            aria-label="size 3 select example">
+                                            <option value="1">Mexicana</option>
+                                            <option value="2">China</option>
+                                            <option value="3">Francesa</option>
+                                            <option value="4">Española</option>
+                                            <option value="5">Alemana</option>
+                                        </select>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej2">
+                                <h2 class="mt-3 text-center text-fontColor">Forms</h2><br><br>
+                                <p class="text-fontColor">
+                                    Los grupos de listas son un componente flexible y potente para mostrar una serie de
+                                    contenidos.
+                                    En la etiqueta ul le tendremos que agregar .list-group.
+                                </p><br>
+                                <div class="alumno1container">
+                                    <h3 class="text-fontColor">Textarea</h3>
+                                    <p class="text-fontColor">El textarea nos permite generar un <b>cuadro de texto</b>
+                                        en el que el usuario puede introducir un texto relativamente largo.</b></p>
+                                    </p>
 
-                        <code>
+                                    <code>
                             &lt;h4&gt;Rellene estos campos para ayudarnos a mejorar la marca:&lt;/h4&gt;<br>
                             &lt;!--<br>
                              FORM CONTROL<br>
@@ -200,21 +207,26 @@ body{
                             &lt;/div&gt;<br>
                         </code><br><br>
 
-                        <h4 class="text-fontColor"><i>Rellene estos campos para ayudarnos a mejorar la marca:</i></h4>
-                        <!--
+                                    <h4 class="text-fontColor"><i>Rellene estos campos para ayudarnos a mejorar la
+                                            marca:</i></h4>
+                                    <!--
                             FORM CONTROL
                             He utlizado un textarea en el cual el usuario puede introducir el texto que quiera. En este textarea el tamaño inicial
                             es de 3 filas "rows = "3"".
                         -->
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="text-fontColor">¿Desea realizar algún comentario adicional que nos pueda ayudar a mejorar?</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        
-                           <br><br>
-                           <h3 class="text-fontColor">Color picker</h3>
-                           <p class="text-fontColor">El Color picker permite al usuario escoger un color mediante una ventana emergente. El Color picker permite al usuario <b>escoger un color</b> mediante una ventana emergente.</b></p>
-                           <code>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="text-fontColor">¿Desea realizar
+                                            algún comentario adicional que nos pueda ayudar a mejorar?</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+
+                                    <br><br>
+                                    <h3 class="text-fontColor">Color picker</h3>
+                                    <p class="text-fontColor">El Color picker permite al usuario escoger un color
+                                        mediante una ventana emergente. El Color picker permite al usuario <b>escoger un
+                                            color</b> mediante una ventana emergente.</b></p>
+                                    <code>
                                 &lt;!--<br>
                                 FORM CONTROL<br>
                                 He utlizado un color picker el cual permite al usuario escoger el color que el quiera mediante una ventana emergente<br>
@@ -223,21 +235,26 @@ body{
                                 &lt;label for="exampleColorInput" class="form-label"&gt;¿Con qué color identifica nuestra marca?&lt;/label&gt;<br>
                                 &lt;input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"&gt;<br>
                            </code><br><br>
-   
-                            <!--
+
+                                    <!--
                             FORM CONTROL
                             He utlizado un color picker el cual permite al usuario escoger el color que el quiera mediante una ventana emergente
                             que aparece cuando pinchas sobre el color picker.
                          -->
-                        <label for="exampleColorInput" class="form-label"><h4 class="text-fontColor"><i>¿Con qué color identifica nuestra marca?</i></h4></label>
-                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c">
-                        <br><br>
+                                    <label for="exampleColorInput" class="form-label">
+                                        <h4 class="text-fontColor"><i>¿Con qué color identifica nuestra marca?</i></h4>
+                                    </label>
+                                    <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                                        value="#563d7c">
+                                    <br><br>
 
-                        <h3 class="text-fontColor">Input Data List & Readonly</h3>
-                        <p class="text-fontColor">El input permite al usuario <b>introducir una linea de texto,</b> en este caso también se abre un menu.</b><br>
-                            También existe un input que <b>no puede ser modificado por el usuario</b> y solo lo puede leer. Esto lo he hecho mediante <code>readonly</code>.</p>
-                        
-                        <code>                            
+                                    <h3 class="text-fontColor">Input Data List & Readonly</h3>
+                                    <p class="text-fontColor">El input permite al usuario <b>introducir una linea de
+                                            texto,</b> en este caso también se abre un menu.</b><br>
+                                        También existe un input que <b>no puede ser modificado por el usuario</b> y solo
+                                        lo puede leer. Esto lo he hecho mediante <code>readonly</code>.</p>
+
+                                    <code>
                             &lt;!--<br>
                             FORM CONTROL<br>
                             He utlizado un input que al pinchar en el aparece un menu con una serie de opciones para que el usuario elija una.<br>
@@ -262,42 +279,52 @@ body{
                             --&gt;<br>
                             &lt;input class="form-control" type="text" value="Esta información es completamente privada y nunca la compartiremos con nadie." aria-label="readonly input example" readonly&gt;<br>
                             &lt;/div&gt;
-                        </code><br><br>         
-                        <!--FORM CONTROL
+                        </code><br><br>
+                                    <!--FORM CONTROL
                         He utlizado un input que al pinchar en el aparece un menu con una serie de opciones para que el usuario elija una.
                         Tambien gracias a "placeholder" podemos mantener un valor dentro de ese input mientras que el usuario no introduzca un nuevo valor.
                         -->
-                        <div class="mb-3">
-                            <h4 class="text-fontColor"><i>Si desea recibir mas formularios como este rellene el campo que viene a continuación:</i></h4>
-                        <label for="exampleInputEmail1" class="text-fontColor">Email</label>
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="nombre@ejemplo.com">
-                        <datalist id="datalistOptions">
-                            <option value="@gmail.com">
-                            <option value="@outlook.com">
-                            <option value="@yahoo.com">
-                            <option value="@gmx.es">
-                            <option value="@aol.com">
-                        </datalist>
-                        <div id="emailHelp" class="text-fontColor">Asegurese de que el email este bien escrito.</div> <br>                 
-                    
-                        <!--
+                                    <div class="mb-3">
+                                        <h4 class="text-fontColor"><i>Si desea recibir mas formularios como este rellene
+                                                el campo que viene a continuación:</i></h4>
+                                        <label for="exampleInputEmail1" class="text-fontColor">Email</label>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="nombre@ejemplo.com">
+                                        <datalist id="datalistOptions">
+                                            <option value="@gmail.com">
+                                            <option value="@outlook.com">
+                                            <option value="@yahoo.com">
+                                            <option value="@gmx.es">
+                                            <option value="@aol.com">
+                                        </datalist>
+                                        <div id="emailHelp" class="text-fontColor">Asegurese de que el email este bien
+                                            escrito.</div> <br>
+
+                                        <!--
                         FORM CONTROL
                         He utlizado un input que no puede ser modificado por el usuario y solo lo puede leer. Esto lo he hecho mediante "readonly".
-                        -->       
-                        <input class="form-control" type="text" value="Esta información es completamente privada y nunca la compartiremos con nadie." aria-label="readonly input example" readonly>
-                        <br>
-                    </div>
-                </section>
-            </div>
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej3">
-                    <h2 class="mt-3 text-center text-fontColor">Range</h2><br><br>
-                    <div class="container">
-                        <h3 class="text-fontColor">Range Steps</h3>
-                        <p class="text-fontColor">Lo que hacemos con el range es crear una caja con una cifra a la derecha, una linea de movimiento la cual dependiendo de donde la colocaremos saldra una cifra u otra, dependiendo de donde queramos llegar.<br>
-                        Esto sucede ya que al crear la etiqueta input, ponemos tipo <code>range</code> y pondremos un <b>minimo y un maximo</b>, y despues con un <b>script</b> crearemos dos constantes para poder hacer el efecto y que funcione, contandolos de uno en uno.</p>
+                        -->
+                                        <input class="form-control" type="text"
+                                            value="Esta información es completamente privada y nunca la compartiremos con nadie."
+                                            aria-label="readonly input example" readonly>
+                                        <br>
+                                    </div>
+                            </section>
+                        </div>
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej3">
+                                <h2 class="mt-3 text-center text-fontColor">Range</h2><br><br>
+                                <div class="container">
+                                    <h3 class="text-fontColor">Range Steps</h3>
+                                    <p class="text-fontColor">Lo que hacemos con el range es crear una caja con una
+                                        cifra a la derecha, una linea de movimiento la cual dependiendo de donde la
+                                        colocaremos saldra una cifra u otra, dependiendo de donde queramos llegar.<br>
+                                        Esto sucede ya que al crear la etiqueta input, ponemos tipo <code>range</code> y
+                                        pondremos un <b>minimo y un maximo</b>, y despues con un <b>script</b> crearemos
+                                        dos constantes para poder hacer el efecto y que funcione, contandolos de uno en
+                                        uno.</p>
 
-                        <code>
+                                    <code>
                             &lt;h2&gt;¿La variedad de productos presentada en el menú es suficiente?&lt;/h2&gt;<br>
                             &lt;div class="box"&gt;<br>
                                 &lt;div class="slider"&gt;<br>
@@ -316,28 +343,34 @@ body{
                             &lt;/script&gt;
                         </code><br><br>
 
-                        <h4 class="text-fontColor"><i>¿La variedad de productos presentada en el menú es suficiente?</i></h4><br>
-                        <div class="box">
-                            <div class="slider">
-                                <input type="range" id="range" min="0" max="10" value="10">
-                            </div>
-                            <div class="valuerange">0</div>
-                        </div><br>
-                    </div>
-                </section>
-            </div>
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej4">
-                    <h2 class="mt-3 text-center text-fontColor">Floating Labels</h2><br><br>
-                    <div class="alumno1container">
-                        <div class="conteiner">
-                        <h3 class="text-fontColor">Floating Labels / Animated Labels</h3>
-                        <p class="text-fontColor">Consiste en hacer el efecto de que al pinchar en el campo, el <b>nombre del campo disminuya de tamaño y se situe en la parte superior del cuadro.</b> Esto lo hacemos mediante<br>
-                            una etiqueta form como se puede ver en la foto y relacinandola con el archivo action.php de la pagina del enlace superior del codigo, despues creamos un <code>input</code> para
-                            crear el campo y luego un <code>label</code> para introducir el nombre y asi con todos los campos que queramos.    
-                        </p>
+                                    <h4 class="text-fontColor"><i>¿La variedad de productos presentada en el menú es
+                                            suficiente?</i></h4><br>
+                                    <div class="box">
+                                        <div class="slider">
+                                            <input type="range" id="range" min="0" max="10" value="10">
+                                        </div>
+                                        <div class="valuerange">0</div>
+                                    </div><br>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej4">
+                                <h2 class="mt-3 text-center text-fontColor">Floating Labels</h2><br><br>
+                                <div class="alumno1container">
+                                    <div class="conteiner">
+                                        <h3 class="text-fontColor">Floating Labels / Animated Labels</h3>
+                                        <p class="text-fontColor">Consiste en hacer el efecto de que al pinchar en el
+                                            campo, el <b>nombre del campo disminuya de tamaño y se situe en la parte
+                                                superior del cuadro.</b> Esto lo hacemos mediante<br>
+                                            una etiqueta form como se puede ver en la foto y relacinandola con el
+                                            archivo action.php de la pagina del enlace superior del codigo, despues
+                                            creamos un <code>input</code> para
+                                            crear el campo y luego un <code>label</code> para introducir el nombre y asi
+                                            con todos los campos que queramos.
+                                        </p>
 
-                        <code>
+                                        <code>
                             &lt;h4&gt;Introduzca su nombre y apellidos:&lt;/h4&gt;<br>
                             &lt;form action="/action_page.php"&gt;<br>
                             &lt;div class="form-floating mb-3 mt-3"&gt;<br>
@@ -351,30 +384,34 @@ body{
                             &lt;/form&gt;<br>
                         </code><br><br>
 
-                        <h4 class="text-fontColor"><i>Introduzca su nombre y apellidos:</i></h4>
-                        <form action="/action_page.php">
-                          <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                            <label for="email">Email</label>
-                          </div>
-                          <div class="form-floating mt-3 mb-3">
-                            <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                            <label for="pwd">Password</label>
-                          </div>
-                        </form><br>
-                    </div>
-                </section>
-            </div>
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej5">
-                    <h2 class="mt-3 text-center text-fontColor">Input Groups</h2><br><br>
-                    <div class="container">
-                        <h3 class="text-fontColor">Input Group & Input Group Size</h3>
-                        <p class="text-fontColor">La clase <code>.input-group</code> es un contenedor para mejorar una entrada agregando un icono, texto o un botón
-                            delante o detrás del campo de entrada como <b>"texto de ayuda"</b>
-                            Se puede usar la clase <code>.input-group-sm</code> para input-groups pequeños y <code>.input-group-lg</code> para input-groups grandes:
-                        </p>
-                        <code>
+                                        <h4 class="text-fontColor"><i>Introduzca su nombre y apellidos:</i></h4>
+                                        <form action="/action_page.php">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="text" class="form-control" id="email"
+                                                    placeholder="Enter email" name="email">
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div class="form-floating mt-3 mb-3">
+                                                <input type="text" class="form-control" id="pwd"
+                                                    placeholder="Enter password" name="pswd">
+                                                <label for="pwd">Password</label>
+                                            </div>
+                                        </form><br>
+                                    </div>
+                            </section>
+                        </div>
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej5">
+                                <h2 class="mt-3 text-center text-fontColor">Input Groups</h2><br><br>
+                                <div class="container">
+                                    <h3 class="text-fontColor">Input Group & Input Group Size</h3>
+                                    <p class="text-fontColor">La clase <code>.input-group</code> es un contenedor para
+                                        mejorar una entrada agregando un icono, texto o un botón
+                                        delante o detrás del campo de entrada como <b>"texto de ayuda"</b>
+                                        Se puede usar la clase <code>.input-group-sm</code> para input-groups pequeños y
+                                        <code>.input-group-lg</code> para input-groups grandes:
+                                    </p>
+                                    <code>
                             &lt;h4&gt;¿Cuánto estaría dispuesto a pagar por nuestro menú diario?&lt;/h4&gt;<br>
 
                             &lt;!--Diseñamos un div con input-group de tamaño grande ("lg")--&gt;<br>
@@ -385,20 +422,25 @@ body{
                                 &lt;span class="input-group-text"&gt;€&lt;/span&gt;<br>
                             &lt;/div&gt;
                         </code><br><br>
-                        <h4 class="text-fontColor"><i>¿Cuánto estaría dispuesto a pagar por nuestro menú diario?</i></h4>
+                                    <h4 class="text-fontColor"><i>¿Cuánto estaría dispuesto a pagar por nuestro menú
+                                            diario?</i></h4>
 
-                        <!--Diseñamos un div con input-group de tamaño grande ("lg")-->
-                        <div class="input-group mb-3 input-group-lg">            
-                            <input type="text" class="form-control" placeholder="Introduzca un importe" name="euros">
-                            <!--Con la etiqueta span agregamos un botón tras el input, en este caso con el símbolo del €-->
-                            <span class="input-group-text">€</span>
-                        </div>  
+                                    <!--Diseñamos un div con input-group de tamaño grande ("lg")-->
+                                    <div class="input-group mb-3 input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Introduzca un importe"
+                                            name="euros">
+                                        <!--Con la etiqueta span agregamos un botón tras el input, en este caso con el símbolo del €-->
+                                        <span class="input-group-text">€</span>
+                                    </div>
 
-                        <br><br>
-                        <h3 class="text-fontColor">Multiple-Addons & Input Group Buttons</h3>
-                        <p class="text-fontColor">Igualmente, se pueden añadir <b>múltiples input o etiquetas (addons),</b> y combinarlos con <code>buttons</code>. En este ejemplo 
-                        se ha combinado un <code>input file</code> con un <b>button de tipo primario (azul):</b></p>
-                        <code>
+                                    <br><br>
+                                    <h3 class="text-fontColor">Multiple-Addons & Input Group Buttons</h3>
+                                    <p class="text-fontColor">Igualmente, se pueden añadir <b>múltiples input o
+                                            etiquetas (addons),</b> y combinarlos con <code>buttons</code>. En este
+                                        ejemplo
+                                        se ha combinado un <code>input file</code> con un <b>button de tipo primario
+                                            (azul):</b></p>
+                                    <code>
                             &lt;h4&gt;Suba una fotografía de su ticket para participar en el sorteo&lt;/h4&gt;<br>
 
                             &lt;div class="input-group"&gt;<br>
@@ -407,26 +449,33 @@ body{
                             &lt;!--Botón de tipo primario (color azul) para cargar el archivo seleccionado--&gt;<br>
                             &lt;button class="btn btn-primary" type="button" id="inputGroupFileAddon"&gt;Cargar&lt;/button&gt;
                         </code><br><br>
-                        <h4 class="text-fontColor"><i>Suba una fotografía de su ticket para participar en el sorteo</i></h4>  
+                                    <h4 class="text-fontColor"><i>Suba una fotografía de su ticket para participar en el
+                                            sorteo</i></h4>
 
-                        <div class="input-group">
-                            <!--Input file de clase "form-control"-->
-                            <input type="file" class="form-control" id="inputGroupFile" aria-describedby="inputGroupFileAddon" aria-label="Upload">
-                            <!--Botón de tipo primario (color azul) para cargar el archivo seleccionado-->
-                            <button class="btn btn-primary" type="button" id="inputGroupFileAddon">Cargar</button>
+                                    <div class="input-group">
+                                        <!--Input file de clase "form-control"-->
+                                        <input type="file" class="form-control" id="inputGroupFile"
+                                            aria-describedby="inputGroupFileAddon" aria-label="Upload">
+                                        <!--Botón de tipo primario (color azul) para cargar el archivo seleccionado-->
+                                        <button class="btn btn-primary" type="button"
+                                            id="inputGroupFileAddon">Cargar</button>
+                                    </div>
+                            </section>
                         </div>
-                </section>
-            </div>
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej6">
-                    <h2 class="mt-3 text-center text-fontColor">Check-boxes & radio-buttons</h2><br><br>
-                    <div class="alumno1container">
-                      <!-- primer grupo de ejemplos de nav -->
-                    <div class="container">
-                        <h3 class="text-fontColor">Radio-buttons & Input-group with radio-button</h3>
-                        <p class="text-fontColor">Los botones de radio se utilizan si desea limitar al usuario a <b>una sola selección de una lista de opciones predeterminadas.</b><br>
-                            En los <code>input-groups</code> se pueden usar <code>radio-button o checkboxes</code> en lugar de texto:</p>
-                        <code>
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej6">
+                                <h2 class="mt-3 text-center text-fontColor">Check-boxes & radio-buttons</h2><br><br>
+                                <div class="alumno1container">
+                                    <!-- primer grupo de ejemplos de nav -->
+                                    <div class="container">
+                                        <h3 class="text-fontColor">Radio-buttons & Input-group with radio-button</h3>
+                                        <p class="text-fontColor">Los botones de radio se utilizan si desea limitar al
+                                            usuario a <b>una sola selección de una lista de opciones
+                                                predeterminadas.</b><br>
+                                            En los <code>input-groups</code> se pueden usar
+                                            <code>radio-button o checkboxes</code> en lugar de texto:
+                                        </p>
+                                        <code>
                             &lt;h4&gt;¿Cómo nos conociste?&lt;/h4&gt;<br>
 
                             &lt;!--añadimos varios div de clase "form-check", y dentro de cada div input type de tipo radio, con las clases "form-check-input"
@@ -451,36 +500,43 @@ body{
                                 &lt;input type="text" class="form-control"&gt;<br>
                             &lt;/div&gt;
                         </code><br><br>
-                        <h4 class="text-fontColor"><i>¿Cómo nos conociste?</i></h4>
+                                        <h4 class="text-fontColor"><i>¿Cómo nos conociste?</i></h4>
 
-                        <!--añadimos varios div de clase "form-check", y dentro de cada div input type de tipo radio, con las clases "form-check-input"
+                                        <!--añadimos varios div de clase "form-check", y dentro de cada div input type de tipo radio, con las clases "form-check-input"
                         y form-check-label para aplicar los estilos a las casillas-->
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"> <b class="text-fontColor">Estaba buscando un sitio para comer y lo vi</b>
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2"><b class="text-fontColor">Lo encontré en internet</b>
-                            <label class="form-check-label" for="radio2"></label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3"><b class="text-fontColor">Me lo recomendó un amigo/a</b>
-                            <label class="form-check-label" for="radio3"></label>
-                        </div>
-                        <!--para la última opción hemos realizado un input-group-text con la etiqueta de "otro"-->
-                        <div class="input-group mb-3">
-                            <div class="input-group-text">
-                                <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">&nbsp;Otro
-                            </div>
-                            <input type="text" class="form-control">
-                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                                value="option1"> <b class="text-fontColor">Estaba buscando un sitio para
+                                                comer y lo vi</b>
+                                            <label class="form-check-label" for="radio1"></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                                value="option2"><b class="text-fontColor">Lo encontré en internet</b>
+                                            <label class="form-check-label" for="radio2"></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio3" name="optradio"
+                                                value="option3"><b class="text-fontColor">Me lo recomendó un amigo/a</b>
+                                            <label class="form-check-label" for="radio3"></label>
+                                        </div>
+                                        <!--para la última opción hemos realizado un input-group-text con la etiqueta de "otro"-->
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text">
+                                                <input type="radio" class="form-check-input" id="radio4" name="optradio"
+                                                    value="option4">&nbsp;Otro
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
 
-                        <br><br>
-                        <h3 class="text-fontColor">Checkboxes</h3>
-                        <p class="text-fontColor">Las casillas de verificación se utilizan si desea que el usuario seleccione <b>cualquier cantidad de opciones de una lista
-                            de opciones preestablecidas.</b><br>
-                            Estas opciones pueden ser dispuestas <b>en columna, o en línea,</b> como en el siguiente ejemplo:</p>
-                        <code>
+                                        <br><br>
+                                        <h3 class="text-fontColor">Checkboxes</h3>
+                                        <p class="text-fontColor">Las casillas de verificación se utilizan si desea que
+                                            el usuario seleccione <b>cualquier cantidad de opciones de una lista
+                                                de opciones preestablecidas.</b><br>
+                                            Estas opciones pueden ser dispuestas <b>en columna, o en línea,</b> como en
+                                            el siguiente ejemplo:</p>
+                                        <code>
                             &lt;h4&gt;¿Qué aspectos valoras de nuestro restaurante?&lt;/h4&gt;
 
                             &lt;!--creamos varios divs con la clase form-check y form-check-inline para que las opciones aparezcan en línea<br>
@@ -506,37 +562,52 @@ body{
                                 &lt;label class="form-check-label" for="inlineCheckbox5"&gt;Limpieza&lt;/label&gt;<br>
                             &lt;/div&gt;
                         </code><br><br>
-                        <h4 class="text-fontColor"><i>¿Qué aspectos valoras de nuestro restaurante?</i></h4>
+                                        <h4 class="text-fontColor"><i>¿Qué aspectos valoras de nuestro restaurante?</i>
+                                        </h4>
 
-                        <!--creamos varios divs con la clase form-check y form-check-inline para que las opciones aparezcan en línea
+                                        <!--creamos varios divs con la clase form-check y form-check-inline para que las opciones aparezcan en línea
                         en los input y label interiores, aplicamos las clases form-check-input y form-check-label respectivamente-->
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Precio</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Atención</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox3">Rapidez</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                            <label class="form-check-label" for="inlineCheckbox4">Ambiente</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                            <label class="form-check-label" for="inlineCheckbox5">Limpieza</label>
-                        </div>
-                        
-                        <br><br><br>
-                        <h3 class="text-fontColor">Toggle Switches</h3>
-                        <p class="text-fontColor">Para que una casilla de verificación tenga el estilo de <b>interruptor o switch,</b> se utilizará la clase <code>.form-switch</code> junto con
-                            el contenedor <code>.form-check</code><br>
-                            En este caso se ha utilizado la etiqueta <code>small</code> para hacer el texto más pequeño.</p>
-                        <code>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1"><b
+                                                    class="text-fontColor">Precio</b></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2"><b
+                                                    class="text-fontColor">Atención</b></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3"><b
+                                                    class="text-fontColor">Rapidez</b></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4"
+                                                value="option4">
+                                            <label class="form-check-label" for="inlineCheckbox4"><b
+                                                    class="text-fontColor">Ambiente</b></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5"
+                                                value="option5">
+                                            <label class="form-check-label" for="inlineCheckbox5"><b
+                                                    class="text-fontColor">Limpieza</b></label>
+                                        </div>
+
+                                        <br><br><br>
+                                        <h3 class="text-fontColor">Toggle Switches</h3>
+                                        <p class="text-fontColor">Para que una casilla de verificación tenga el estilo
+                                            de <b>interruptor o switch,</b> se utilizará la clase
+                                            <code>.form-switch</code> junto con
+                                            el contenedor <code>.form-check</code><br>
+                                            En este caso se ha utilizado la etiqueta <code>small</code> para hacer el
+                                            texto más pequeño.
+                                        </p>
+                                        <code>
                             &lt;h4&gt;Las siguientes reglas del RGPD deben leerse y aceptarse:&lt;/h4&gt;<br>     
             
                             &lt;div class="form-check form-switch"&gt;<br>
@@ -550,35 +621,48 @@ body{
                                                         qué almacenamos tus datos.<br>
                                 &lt;/small&gt;<br>
                             &lt;/div&gt;
-                        </code><br><br> 
-                        <h4 class="text-fontColor"><i>Las siguientes reglas del RGPD deben leerse y aceptarse:</i></h4>     
-                                    
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="privacidad" name="privacidad" value="yes" checked>
-                            <label class="form-check-label" for="privacidad"><b class="text-fontColor">Estoy de acuerdo</b></label>
-                        </div>
-                        <div id="privacidad">
-                            <small class="text-fontColor">Este formulario recopila tu nombre, correo electrónico y contenido para que podamos 
-                                                    realizar un seguimiento de los comentarios dejados en la web. Para más información revisa
-                                                    nuestra política de privacidad, donde encontrarás más información sobre dónde, cómo y por
-                                                    qué almacenamos tus datos.
-                            </small>
-                        </div><br>
-                    </div>
-                </section>
-            </div>
-            <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
-                <section id="ej7">
-                    <h2 class="mt-3 text-center text-fontColor">Form Validation</h2><br><br>
-                    <div class="container">
-                        <h3 class="text-fontColor">Validation</h3>
-                        <p class="text-fontColor">Puede usar diferentes clases de validación para proporcionar comentarios valiosos a los usuarios. Agregue <code>.was-validated o .needs-validation</code> al elemento <b>form</b>, 
-                            dependiendo de si desea proporcionar comentarios de validación antes o después de enviar el formulario. Los campos de entrada tendrán un <b>borde verde (válido) 
-                            o rojo (no válido)</b> para indicar lo que falta en el formulario. También puede agregar un mensaje <code>.valid-feedback o .invalid-feedback</code> para decirle al usuario 
-                            explícitamente qué falta o qué debe hacerse antes de enviar el formulario.</p>
-                        </p>
+                        </code><br><br>
+                                        <h4 class="text-fontColor"><i>Las siguientes reglas del RGPD deben leerse y
+                                                aceptarse:</i></h4>
 
-                        <code>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="privacidad"
+                                                name="privacidad" value="yes" checked>
+                                            <label class="form-check-label" for="privacidad"><b
+                                                    class="text-fontColor">Estoy de acuerdo</b></label>
+                                        </div>
+                                        <div id="privacidad">
+                                            <small class="text-fontColor">Este formulario recopila tu nombre, correo
+                                                electrónico y contenido para que podamos
+                                                realizar un seguimiento de los comentarios dejados en la web. Para más
+                                                información revisa
+                                                nuestra política de privacidad, donde encontrarás más información sobre
+                                                dónde, cómo y por
+                                                qué almacenamos tus datos.
+                                            </small>
+                                        </div><br>
+                                    </div>
+                            </section>
+                        </div>
+                        <div class="col-xl-5 mx-auto my-3 bg-bgCont rounded">
+                            <section id="ej7">
+                                <h2 class="mt-3 text-center text-fontColor">Form Validation</h2><br><br>
+                                <div class="container">
+                                    <h3 class="text-fontColor">Validation</h3>
+                                    <p class="text-fontColor">Puede usar diferentes clases de validación para
+                                        proporcionar comentarios valiosos a los usuarios. Agregue
+                                        <code>.was-validated o .needs-validation</code> al elemento <b>form</b>,
+                                        dependiendo de si desea proporcionar comentarios de validación antes o después
+                                        de enviar el formulario. Los campos de entrada tendrán un <b>borde verde
+                                            (válido)
+                                            o rojo (no válido)</b> para indicar lo que falta en el formulario. También
+                                        puede agregar un mensaje <code>.valid-feedback o .invalid-feedback</code> para
+                                        decirle al usuario
+                                        explícitamente qué falta o qué debe hacerse antes de enviar el formulario.
+                                    </p>
+                                    </p>
+
+                                    <code>
                             &lt;form action="/action_page.php" class="was-validated"&gt;<br>
                             &lt;div class="mb-3 mt-3"&gt;<br>
                               &lt;label for="uname" class="form-label"&gt;Usuario:&lt;/label&gt;<br>
@@ -603,84 +687,93 @@ body{
                           &lt;br&gt;&lt;br&gt;
                         </code><br><br>
 
-                        <form action="/action_page.php" class="was-validated">
-                            <div class="mb-3 mt-3">
-                              <label for="uname" class="form-label"><b class="text-fontColor">Usuario:</b></label>
-                              <input type="text" class="form-control" id="uname" placeholder="Escribe el usuario" name="uname" required>
-                              <div class="valid-feedback"><b>Correcto.</b></div>
-                              <div class="invalid-feedback"><b>Por favor introduce un nombre.</b></div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="pwd" class="form-label"><b class="text-fontColor">Contraseña:</b></label>
-                              <input type="password" class="form-control" id="pwd" placeholder="Escribe la contraseña" name="pswd" required>
-                              <div class="valid-feedback"><b>Valida.</b></div>
-                              <div class="invalid-feedback"><b>Por favor introduce una contraseña.</b></div>
-                            </div>
-                            <div class="form-check mb-3">
-                              <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
-                              <label class="form-check-label" for="myCheck"><b>Estoy de acuerdo con...</b></label>
-                              <div class="valid-feedback"><b>Perfecto.</b></div>
-                              <div class="invalid-feedback"><b>Acepta los terminos para continuar.</b></div>
-                            </div>
-                            <button type="submit" class="btn btn-primary"><b class="text-fontColor"></b> Enviar</button>
-                        </form><br>                
+                                    <form action="" class="was-validated">
+                                        <div class="mb-3 mt-3">
+                                            <label for="uname" class="form-label"><b
+                                                    class="text-fontColor">Usuario:</b></label>
+                                            <input type="text" class="form-control" id="uname"
+                                                placeholder="Escribe el usuario" name="uname" required>
+                                            <div class="valid-feedback"><b>Correcto.</b></div>
+                                            <div class="invalid-feedback"><b>Por favor introduce un nombre.</b></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pwd" class="form-label"><b
+                                                    class="text-fontColor">Contraseña:</b></label>
+                                            <input type="password" class="form-control" id="pwd"
+                                                placeholder="Escribe la contraseña" name="pswd" required>
+                                            <div class="valid-feedback"><b>Valida.</b></div>
+                                            <div class="invalid-feedback"><b>Por favor introduce una contraseña.</b>
+                                            </div>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="myCheck" name="remember"
+                                                required>
+                                            <label class="form-check-label" for="myCheck"><b>Estoy de acuerdo
+                                                    con...</b></label>
+                                            <div class="valid-feedback"><b>Perfecto.</b></div>
+                                            <div class="invalid-feedback"><b>Acepta los terminos para continuar.</b>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"><b class="text-fontColor"></b>
+                                            Enviar</button>
+                                    </form><br>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                </section>
-            </div>
-          </div>
+                </div>
+            </main>
         </div>
-        </main>
-    </div>
-    <br><br>
-    <footer>
-      <div class="social">
-          
-          <h5 class="text-center text-fontColor">Social: </h5>
-          <br>
-          <div class="text-center">
-            <a href="#"><img src="./images/twitter.png" width="30" height="30"/></a>
-            <a href="#"><img src="./images/facebook.png" width="30" height="30"/></a>
-            <a href="#"><img src="./images/instagram.png" width="30" height="30"/></a>
-          </div>
-        </div><br>
-      <div class="copy">
-          
-          <p class="text-center text-fontColor">&copy; Todos los derechos reservados</p>
-      </div>
-      <br>
+        <br><br>
+        <footer>
+            <div class="social">
 
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoA1.html">Grupo A1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoA2.html">Grupo A2</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoA3.html">Grupo A3</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoB1.html">Grupo B1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="grupoB2.html">Grupo B2</a>
-              </li>
-          </ul>
-      </nav>
-  </footer>
-    <script src="./JS/scripts.js"></script>
-    <script>
-        const slider = document.querySelector("#range");
-        const value = document.querySelector(".valuerange");
-        value.textContent = slider.value;
-        slider.oninput = function(){
-            value.textContent = this.value;
-        }
-  </script>
+                <h5 class="text-center text-fontColor">Social: </h5>
+                <br>
+                <div class="text-center">
+                    <a href="#"><img src="./images/twitter.png" width="30" height="30" /></a>
+                    <a href="#"><img src="./images/facebook.png" width="30" height="30" /></a>
+                    <a href="#"><img src="./images/instagram.png" width="30" height="30" /></a>
+                </div>
+            </div><br>
+            <div class="copy">
+
+                <p class="text-center text-fontColor">&copy; Todos los derechos reservados</p>
+            </div>
+            <br>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupoA1.html">Grupo A1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupoA2.html">Grupo A2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupoA3.html">Grupo A3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grupoB2.html">Grupo B2</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="./JS/scripts.js"></script>
+        <script>
+            const slider = document.querySelector("#range");
+            const value = document.querySelector(".valuerange");
+            value.textContent = slider.value;
+            slider.oninput = function () {
+                value.textContent = this.value;
+            }
+        </script>
     </div>
 </body>
 
