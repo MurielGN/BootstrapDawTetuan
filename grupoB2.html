@@ -18,36 +18,50 @@
 </head>
 <body>
     <div class="container-fluid bg-bgMain">
-    <header>
-        <h1 class="text-center text-fontColor">Grupo B2</h1>
-    </header>
-    <nav>
-        <div class="navegacion">
+        <header>
+          <h1 class="text-center text-fontColor">Grupo B2</h1>
+        </header>
+        <nav>
+          <div class="navegacion">
             <br>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="grupoA1.html">Grupo A1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="grupoA2.html">Grupo A2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="grupoA3.html">Grupo A3</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="grupoB1.html">Grupo B1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="grupoB2.html">Grupo B2</a>
-                            </li>
-                        </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoA2.html">Grupo A1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoA2.html">Grupo A2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="grupoA3.html">Grupo A3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupoB1.html">Grupo B1</a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="grupoA1.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Grupo B2
+                      </a>
+                      
+                      <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-fontColor" href="#ej1">ALERTS</a></li>
+                        <li><a class="dropdown-item text-fontColor" href="#ej2">BOTONES Y GRUPO DE BOTONES</a></li>
+                        <li><a class="dropdown-item text-fontColor" href="#ej3">GRUPO DE BOTONES</a></li>
+                        <li><a class="dropdown-item text-fontColor" href="#ej4">BADGES</a></li>
+                        <li><a class="dropdown-item text-fontColor" href="#ej5">PROGRESS BARS</a></li>
+                        <li><a class="dropdown-item text-fontColor" href="#ej6">SPINNERS</a></li>
+                        <li><a class="dropdown-item text-fontColor" href="#ej7">FORMULARIO ESPECÍFICO</a></li>
+                      </ul>
+                    </div>
+                </li>
+            </ul>
             </nav>
         </div>
-    </nav>
+        </nav>
     <div class="main">
         <main>
             <div class="container-fluid mt-3">
@@ -699,7 +713,7 @@
                     <p class="text-fontColor">Este formulario es la puesta en práctica de todo lo aprendido. Con las ideas que han ido surgiendo de diferentes investigaciones de cada apartado.</p>
                     <p class="text-fontColor">Además de organizar el tamaño del formulario, por ahora estático, e introducir dos select y un radio.</p>
                     <p class="text-fontColor">Se ha conseguido que al pulsar el botón Enviar (JavaScript) se cambie la clase Bootstrap del form a
-                        "was-validated". Esto hará la llamada a las librerías de Bootstrap y se comprobará que estén todos los campos rellenos y salgan en verde los que están bien y en rojo más un mensaje debajo los que están mal. ref: <a href="https://getbootstrap.com/docs/5.0/forms/validation/">etbootstrap.com forms validation</a></p>
+                        "was-validated". Esto hará la llamada a las librerías de Bootstrap y se comprobará que estén todos los campos rellenos y salgan en verde los que están bien y en rojo más un mensaje debajo los que están mal. ref: <a href="https://getbootstrap.com/docs/5.0/forms/validation/" class="text-info">etbootstrap.com forms validation</a></p>
                     <p class="text-fontColor"> Además se ha añadido un icino de Bootstrap.Para esto, en la cabecera 
                     <p class="text-fontColor">Se ha añadido un alert informativo de Bootstrap para enlazar con un documento de términos y condiciones.</p>  
                     <code>'&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"&gt;' más el icono deseado de alerta
@@ -890,7 +904,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Enviar</button>
+                                <button class="btn btn-primary mb-4" type="submit">Enviar</button>
                             </div>
 
                         </form>
