@@ -20,9 +20,12 @@ $border-radius: 2rem;
 
 
 
-
-
 @import '../bootstrap-5.0.2/scss/bootstrap.scss';
 
 code { font-size: 0.875em; color: $fontColor; word-wrap: break-word; }
+
+.dropdown-item:hover, .dropdown-item:focus{
+    color:#1e2125;
+    background: #00c5cfb0;
+}
 
