@@ -7,21 +7,23 @@ $bgContent: #5D5D5D;
 @import '../bootstrap-5.0.2/scss/functions';
 @import '../bootstrap-5.0.2/scss/variables';
 
-
+//Map custom colors
 $custom-theme-colors: (
     "bgMain" : $bgColor,
     "bgCont" : $bgContent,
     "fontColor" : $fontColor
 );
-
+//Intregation of new map
 $theme-colors: map-merge($custom-theme-colors , $theme-colors );
 
+//Custom border radius
 $border-radius: 2rem;
 
 
-
+//Import all bootstrap css
 @import '../bootstrap-5.0.2/scss/bootstrap.scss';
 
+//Customice css
 code { font-size: 0.875em; color: #00c5cfb0; word-wrap: break-word; }
 
 .dropdown-item:hover, .dropdown-item:focus{
